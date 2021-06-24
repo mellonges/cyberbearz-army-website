@@ -97,7 +97,7 @@ export default function NewAccordions() {
 
     return (
         <div>
-            <Accordion square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+            <Accordion square expanded={expanded === 'panel1'} onChange={handleChange('panel1')} onClick={() => changeButtonValue1()}>
                 <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                     <Typography><b style={{fontSize: 20}}>Низкие комиссии</b></Typography>
                     <Button style={{
@@ -122,7 +122,7 @@ export default function NewAccordions() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion square expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+            <Accordion square expanded={expanded === 'panel2'} onChange={handleChange('panel2')} onClick={() => changeButtonValue2()}>
                 <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
                     <Typography><b style={{fontSize: 20}}>Алгоритм генерации</b></Typography>
                     <Button style={{
@@ -143,7 +143,7 @@ export default function NewAccordions() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion square expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+            <Accordion square expanded={expanded === 'panel3'} onChange={handleChange('panel3')} onClick={() => changeButtonValue3()}>
                 <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
                     <Typography><b style={{fontSize: 20}}>Как купить и хранить</b></Typography>
                     <Button style={{
@@ -161,7 +161,7 @@ export default function NewAccordions() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion square expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+            <Accordion square expanded={expanded === 'panel4'} onChange={handleChange('panel4')} onClick={() => changeButtonValue4()}>
                 <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
                     <Typography><b style={{fontSize: 20}}>Продажа и обмен</b></Typography>
                     <Button style={{
@@ -181,7 +181,7 @@ export default function NewAccordions() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion square expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
+            <Accordion square expanded={expanded === 'panel5'} onChange={handleChange('panel5')} onClick={() => changeButtonValue5()}>
                 <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
                     <Typography><b style={{fontSize: 20}}>Смарт контарт</b></Typography>
                     <Button style={{
