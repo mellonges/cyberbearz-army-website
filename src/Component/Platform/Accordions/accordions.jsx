@@ -12,18 +12,11 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "rgb(29,29,31)",
         color: "white",
         fontSize: 15
-
-
     },
     heading: {
         fontSize: theme.typography.pxToRem(25),
         fontWeight: theme.typography.fontWeightRegular,
         color: "white",
-
-
-
-
-
     },
 
     title1: {
