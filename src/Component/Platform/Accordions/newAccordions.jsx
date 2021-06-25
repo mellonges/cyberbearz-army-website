@@ -43,12 +43,14 @@ const AccordionSummary = withStyles({
     content: {
         '&$expanded': {
             margin: '15px 0',
-            color: "aqua",
+            color: "yellow",
 
 
         },
     },
-    expanded: {},
+    expanded: {
+
+    },
 })(MuiAccordionSummary);
 
 const AccordionDetails = withStyles((theme) => ({
@@ -65,48 +67,45 @@ export default function NewAccordions() {
 
     };
 
-    const [buttonValue1, setButtonValue1] = React.useState("+");
-    const changeButtonValue1 = () => {
-        if (buttonValue1 == "X")  setButtonValue1("+")
-        else setButtonValue1("X")
-    }
-
-    const [buttonValue2, setButtonValue2] = React.useState("+");
-    const changeButtonValue2 = () => {
-        if (buttonValue2 == "X")  setButtonValue2("+")
-        else setButtonValue2("X")
-    }
-
-    const [buttonValue3, setButtonValue3] = React.useState("+");
-    const changeButtonValue3 = () => {
-        if (buttonValue3 == "X")  setButtonValue3("+")
-        else setButtonValue3("X")
-    }
-
-    const [buttonValue4, setButtonValue4] = React.useState("+");
-    const changeButtonValue4 = () => {
-        if (buttonValue4 == "X")  setButtonValue4("+")
-        else setButtonValue4("X")
-    }
-    const [buttonValue5, setButtonValue5] = React.useState("+");
-    const changeButtonValue5 = () => {
-        if (buttonValue5 == "X")  setButtonValue5("+")
-        else setButtonValue5("X")
-    }
+    // const [buttonValue1, setButtonValue1] = React.useState("+");
+    // const changeButtonValue1 = () => {
+    //     if (buttonValue1 == "X")  setButtonValue1("+")
+    //     else setButtonValue1("X")
+    // }
+    //
+    // const [buttonValue2, setButtonValue2] = React.useState("+");
+    // const changeButtonValue2 = () => {
+    //     if (buttonValue2 == "X")  setButtonValue2("+")
+    //     else setButtonValue2("X")
+    // }
+    //
+    // const [buttonValue3, setButtonValue3] = React.useState("+");
+    // const changeButtonValue3 = () => {
+    //     if (buttonValue3 == "X")  setButtonValue3("+")
+    //     else setButtonValue3("X")
+    // }
+    //
+    // const [buttonValue4, setButtonValue4] = React.useState("+");
+    // const changeButtonValue4 = () => {
+    //     if (buttonValue4 == "X")  setButtonValue4("+")
+    //     else setButtonValue4("X")
+    // }
+    // const [buttonValue5, setButtonValue5] = React.useState("+");
+    // const changeButtonValue5 = () => {
+    //     if (buttonValue5 == "X")  setButtonValue5("+")
+    //     else setButtonValue5("X")
+    // }
 
 
     return (
         <div>
-            <Accordion square expanded={expanded === 'panel1'} onChange={handleChange('panel1')} onClick={() => changeButtonValue1()}>
+            <Accordion square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                 <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                     <Typography><b style={{fontSize: 20}}>Низкие комиссии</b></Typography>
-                    <Button style={{
-                        position: "absolute",
+                    <div id="#plus" style={{position: "absolute",
                         top: 0,
                         right: 0,
-                        fontSize: 30
-                    }} color={"primary"} onClick={() => changeButtonValue1()}>{buttonValue1}</Button>
-
+                        fontSize: 30}}  className={expanded === "panel1" ? "stock-title" : "stock-title collapsed"}><span className="icon icon-cross"></span></div>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
@@ -122,15 +121,13 @@ export default function NewAccordions() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion square expanded={expanded === 'panel2'} onChange={handleChange('panel2')} onClick={() => changeButtonValue2()}>
+            <Accordion square expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                 <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
                     <Typography><b style={{fontSize: 20}}>Алгоритм генерации</b></Typography>
-                    <Button style={{
-                        position: "absolute",
+                    <div style={{position: "absolute",
                         top: 0,
                         right: 0,
-                        fontSize: 30
-                    }} color={"primary"} onClick={() => changeButtonValue2()}>{buttonValue2}</Button>
+                        fontSize: 30}} className={expanded === "panel2" ? "stock-title" : "stock-title collapsed"}><span className="icon icon-cross"></span></div>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
@@ -143,15 +140,13 @@ export default function NewAccordions() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion square expanded={expanded === 'panel3'} onChange={handleChange('panel3')} onClick={() => changeButtonValue3()}>
+            <Accordion square expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                 <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
                     <Typography><b style={{fontSize: 20}}>Как купить и хранить</b></Typography>
-                    <Button style={{
-                        position: "absolute",
+                    <div style={{position: "absolute",
                         top: 0,
                         right: 0,
-                        fontSize: 30
-                    }} color={"primary"} onClick={() => changeButtonValue3()}>{buttonValue3}</Button>
+                        fontSize: 30}} className={expanded === "panel3" ? "stock-title" : "stock-title collapsed"}><span className="icon icon-cross"></span></div>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
@@ -161,15 +156,13 @@ export default function NewAccordions() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion square expanded={expanded === 'panel4'} onChange={handleChange('panel4')} onClick={() => changeButtonValue4()}>
+            <Accordion square expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
                 <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
                     <Typography><b style={{fontSize: 20}}>Продажа и обмен</b></Typography>
-                    <Button style={{
-                        position: "absolute",
+                    <div style={{position: "absolute",
                         top: 0,
                         right: 0,
-                        fontSize: 30
-                    }} color={"primary"} onClick={() => changeButtonValue4()}>{buttonValue4}</Button>
+                        fontSize: 30}} className={expanded === "panel4" ? "stock-title" : "stock-title collapsed"}><span className="icon icon-cross"></span></div>
 
                 </AccordionSummary>
                 <AccordionDetails>
@@ -181,15 +174,13 @@ export default function NewAccordions() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion square expanded={expanded === 'panel5'} onChange={handleChange('panel5')} onClick={() => changeButtonValue5()}>
+            <Accordion square expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
                 <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
                     <Typography><b style={{fontSize: 20}}>Смарт контарт</b></Typography>
-                    <Button style={{
-                        position: "absolute",
-                        top: 0,
-                        right: 0,
-                        fontSize: 30
-                    }} color={"primary"} onClick={() => changeButtonValue5()}>{buttonValue5}</Button>
+                   <div style={{position: "absolute",
+                       top: 0,
+                       right: 0,
+                       fontSize: 30}} className={expanded === "panel4" ? "stock-title" : "stock-title collapsed"}><span className="icon icon-cross"></span></div>
 
                 </AccordionSummary>
                 <AccordionDetails>
