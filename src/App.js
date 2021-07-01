@@ -1,20 +1,16 @@
-import {Container} from "@material-ui/core";
-import SimpleAccordion from "./Component/Platform/Accordions/accordions";
-import Section from "./Component/Platform/Accordions/Section";
-import NewAccordions from "./Component/Platform/Accordions/newAccordions";
+import SimpleAccordion from "./Component/Accordions/accordions";
+import Section from "./Component/Bears/Section";
+import NewAccordions from "./Component/Accordions/newAccordions";
+import GetFree from "./Component/Buttons/GetFree";
 
 
 function App() {
     return (
         <div className="App">
-            <Section />
-            {/*<SimpleAccordion>*/}
-            <NewAccordions />
-
-
+            <Section/>
+            <NewAccordions/>
         </div>
-    );
-
+    )
 }
 
 export default App;
