@@ -6,7 +6,8 @@ import BuyFor from "../Buttons/BuyFor";
 const Section = () => {
     return (
         <section
-            className="section section-lg section-align-center section-lead section-bold section-theme-autoheight section-theme-lighten section-eyebrow-include section-theme-indent-bottom-inside-md section-theme-indent-bottom-inside-lg-option section-theme-indent-no-bottom-outside  section-22 section-i1">
+            className="section section-lg section-align-center section-lead section-bold section-theme-autoheight section-theme-lighten section-eyebrow-include section-theme-indent-bottom-inside-md section-theme-indent-bottom-inside-lg-option
+            section-theme-indent-no-bottom-outside  section-22 section-i1">
             <div className="container">
                 <div className="row">
                     <div
@@ -34,14 +35,13 @@ const Section = () => {
                                             <div className="tile-title">
                                                 <div className="tile-price"><span>Price:</span> FREE! (0 BNB)</div>
                                                 <p>В армии их называют Teddy bear. Ничего не умеют, но очень любят
-                                                    драться. Чтобы получить уважение старших товарищей, им ещё предстоит
-                                                    проявить себя в бою и пройти обряд инициации.</p>
+                                                    драться. Чтобы получить уважение старших товарищей, им ещё предстоит проявить себя в бою и пройти обряд инициации.</p>
                                                 <div className="progress">
                                                     <div className="progress-bar" role="progressbar" aria-valuenow="60"
                                                          aria-valuemin="0" aria-valuemax="60" style={{width: "1%"}}>
                                                         <span className="sr-only">10% Complete</span>
                                                     </div>
-                                                    <div className="progress-count">0/0{}</div>
+                                                    <div className="progress-count">1/100{}</div>
                                                 </div>
 
                                             </div>

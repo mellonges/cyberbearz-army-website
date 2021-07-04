@@ -7,22 +7,29 @@ import Typography from '@material-ui/core/Typography';
 
 const Accordion = withStyles({
     root: {
-        border: '15px solid rgba(0, 0, 0, .125)',
+        border: '0px solid rgba(0, 0, 0, .0)',
         boxShadow: 'none',
+        borderRadius: 50,
         fontSize: 15,
         color: "white",
         backgroundColor: "rgb(29,29,31)",
-
+        // borderTop: 1,
+        // borderBottom: 1,
+        borderRight: 1,
+        borderLeft: 1,
+        // borderColor: "yellow",
+        // margin: "10%",
+        padding: 10,
 
         '&:not(:last-child)': {
-            borderBottom: 2,
+            borderBottom: 15,
 
         },
         '&:before': {
             display: 'none',
         },
         '&$expanded': {
-            margin: 'auto',
+            // margin: '10%',
         },
 
     },
@@ -34,14 +41,18 @@ const AccordionSummary = withStyles({
         backgroundColor: 'rgba(30,30,31)',
         borderBottom: '1px solid rgba(0, 0, 0, .125)',
         marginBottom: -1,
-        minHeight: 56,
+        // padding: "5px",
+        borderRadius: 16,
+        // minHeight: 56,
+        borderColor: "grey",
+        // margin: "20%",
         '&$expanded': {
             minHeight: 56,
         },
+
     },
     content: {
         '&$expanded': {
-            margin: '15px 0',
             color: "yellow",
 
 
@@ -54,7 +65,8 @@ const AccordionSummary = withStyles({
 
 const AccordionDetails = withStyles((theme) => ({
     root: {
-        padding: theme.spacing(2),
+        padding: theme.spacing(5),
+
     },
 }))(MuiAccordionDetails);
 
@@ -97,14 +109,14 @@ export default function NewAccordions() {
 
 
     return (
-        <div>
-            <Accordion square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+        <div style={{margin: "10%"}}>
+            <Accordion class="stock-title collapsed" data-toggle="collapse" href="#stock-495s" aria-expanded="false" aria-controls="stock-495s"  square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                 <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                     <Typography><b style={{fontSize: 20}}>Низкие комиссии</b></Typography>
                     <div id="#plus" style={{position: "absolute",
                         top: 0,
                         right: 0,
-                        fontSize: 30}}  className={expanded === "panel1" ? "stock-title" : "stock-title collapsed"}><span className="icon icon-cross"></span></div>
+                        fontSize: 30}}  className={expanded === "panel1" ? "stock-title" : "stock-title collapsed"}><span style={{height: "20%",}} className="icon icon-cross"></span></div>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
@@ -126,7 +138,7 @@ export default function NewAccordions() {
                     <div style={{position: "absolute",
                         top: 0,
                         right: 0,
-                        fontSize: 30}} className={expanded === "panel2" ? "stock-title" : "stock-title collapsed"}><span className="icon icon-cross"></span></div>
+                        fontSize: 30}} className={expanded === "panel2" ? "stock-title" : "stock-title collapsed"}><span style={{height: "20%"}} className="icon icon-cross"></span></div>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
@@ -145,7 +157,7 @@ export default function NewAccordions() {
                     <div style={{position: "absolute",
                         top: 0,
                         right: 0,
-                        fontSize: 30}} className={expanded === "panel3" ? "stock-title" : "stock-title collapsed"}><span className="icon icon-cross"></span></div>
+                        fontSize: 30}} className={expanded === "panel3" ? "stock-title" : "stock-title collapsed"}><span style={{height: "20%"}} className="icon icon-cross"></span></div>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
@@ -161,7 +173,7 @@ export default function NewAccordions() {
                     <div style={{position: "absolute",
                         top: 0,
                         right: 0,
-                        fontSize: 30}} className={expanded === "panel4" ? "stock-title" : "stock-title collapsed"}><span className="icon icon-cross"></span></div>
+                        fontSize: 30}} className={expanded === "panel4" ? "stock-title" : "stock-title collapsed"}><span style={{height: "20%"}} className="icon icon-cross"></span></div>
 
                 </AccordionSummary>
                 <AccordionDetails>
@@ -179,7 +191,7 @@ export default function NewAccordions() {
                    <div style={{position: "absolute",
                        top: 0,
                        right: 0,
-                       fontSize: 30}} className={expanded === "panel4" ? "stock-title" : "stock-title collapsed"}><span className="icon icon-cross"></span></div>
+                       fontSize: 30}} className={expanded === "panel4" ? "stock-title" : "stock-title collapsed"}><span style={{height: "20%"}} className="icon icon-cross"></span></div>
 
                 </AccordionSummary>
                 <AccordionDetails>
