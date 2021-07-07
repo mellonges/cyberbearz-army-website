@@ -2,10 +2,8 @@ import React from 'react';
 
 const MySquad = () => {
     return (
-        <div>
+        <>
             <section id="block-views-section-section" className="block block-views clearfix">
-
-
                 <section
                     className="section section-hero section-lg section-theme-transparent section-theme-indent-top-outside-sm  section-42 section-i0">
                     <div className="section-option">
@@ -36,9 +34,9 @@ const MySquad = () => {
                                                         className="label label-default">Winking</span><span
                                                         className="label label-default">Body Armor Green</span><span
                                                         className="label label-default">Ciggy</span>
-                                                        <p><a href="https://www.bearz.tech/squade#"
+                                                        <p><button
                                                               className="btn btn-default" data-toggle="modal"
-                                                              data-target="#myModal">Send the bear</a></p>
+                                                              data-target="#myModal">Send the bear</button></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -58,9 +56,9 @@ const MySquad = () => {
                                                         className="label label-default">Beret Military Officer</span><span
                                                         className="label label-default">Whistle</span><span
                                                         className="label label-default">NVG Elite Gold</span>
-                                                        <p><a href="https://www.bearz.tech/squade#"
+                                                        <p><button
                                                               className="btn btn-default" data-toggle="modal"
-                                                              data-target="#myModal">Send the bear</a></p>
+                                                              data-target="#myModal">Send the bear</button></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -72,7 +70,30 @@ const MySquad = () => {
                     </div>
                 </section>
             </section>
-        </div>
+
+
+            <div className="modal fade" id="myModal" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div className="modal-dialog" role="document">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span
+                                className="icon icon-cross"></span></button>
+                            <h4 className="modal-title" id="myModalLabel">Send the bear</h4>
+
+                        </div>
+                        <div className="modal-body">
+                            <img style={{ width: "30%", height: "30%"}} src="https://www.bearz.tech/sites/all/themes/bootstrap/air/img/bear.png"/>
+                            <h6>text</h6>
+                            <input style={{marginTop: "5%"}} type="text"
+                                   className="form-control"
+                                   placeholder="To address" />
+                                <button style={{marginLeft: "80%"}} type="button" className="btn btn-default">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </>
     );
 };
 
