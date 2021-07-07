@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {Link} from "@material-ui/core";
+import {NavLink} from "react-router-dom";
 
 const ethereum = window.ethereum;
 const Navbar = () => {
@@ -35,17 +36,14 @@ const Navbar = () => {
     //     console.log(error);
     //     // alert("An error has occurred. Please make sure the metamask is ready to go. See error in log");
 
-
-
-
-
-
         return (
         <>
             <header style={{fontFamily: "Common Pixel"}} id="navbar" role="banner" className="navbar navbar-static-top navbar-inverse">
                 <div className="container">
                     <div className="navbar-header">
+                        <NavLink to="/">
                         <img className="navbar-brand pull-left"  src={"https://www.bearz.tech/sites/default/files/navbar/brand/img/cyberbearzarmy_middle.svg"} alt="Главная" />
+                        </NavLink>
                         <button id="navbar-toggle" className="navbar-toggle" data-toggle="sidebar"
                                 data-target=".sidebar">
                             <span className="sr-only">Toggle navigation</span>
@@ -66,9 +64,11 @@ const Navbar = () => {
                                                              tabIndex="0">Instagram</a></li>
                             </ul>
                             <div className="navbar-text navbar-right">
-                                <button onClick={() => connectMetamask()}
-                                        className="btn btn-sm btn-default">{buttonText}
-                                </button>
+                                {buttonText === "My Bearz" ? <NavLink  className="btn btn-sm btn-default" to="/squade">My Squad</NavLink>
+                                     :<button onClick={() => connectMetamask()}
+                                               className="btn btn-sm btn-default">{buttonText}
+                                    </button>
+                                }
                             </div>
                         </nav>
                     </div>
