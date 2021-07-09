@@ -10246,7 +10246,7 @@ html.js .autocomplete-throbber.throbbing {
         height: 42px;
         width: 72px; } }
 .icon-recruits {
-    /*background-image: url(../icons/air_glyph_047_recruits.svg);*/
+    background-image: url(https://www.bearz.tech/sites/all/themes/bootstrap/air/icons/air_glyph_047_recruits.svg);
     background-size: 48px;
     height: 56px;
     width: 52px; }
@@ -10266,7 +10266,7 @@ html.js .autocomplete-throbber.throbbing {
         height: 44px;
         width: 40px; } }
 .icon-officers {
-    /*background-image: url(../icons/air_glyph_049_officers.svg);*/
+    background-image: url(https://www.bearz.tech/sites/all/themes/bootstrap/air/icons/air_glyph_049_officers.svg);
     background-size: 48px;
     height: 56px;
     width: 52px; }
@@ -10419,8 +10419,9 @@ html.js .autocomplete-throbber.throbbing {
 					left: 0;
 					bottom: 0;
 				}*/ }
-/*.section-22 .tile-409 .tile {*/
-/*    background-image: url(../img/cyberbearz-barry-recruit.png); }*/
+.section-22 .tile-409 .tile {
+    background-image: url(https://www.bearz.tech/sites/all/themes/bootstrap/air/img/cyberbearz-barry-recruit.png);
+}
 .section-22 .tile-409 h3 {
     color: #ececec; }
 .section-22 .tile-409 .tile-price {
@@ -10429,16 +10430,16 @@ html.js .autocomplete-throbber.throbbing {
     background-color: #fff; }
 .section-22 .tile-409 .progress-count {
     color: #0beaff; }
-/*.section-22 .tile-508 .tile {*/
-/*    background-image: url(../img/cyberbearz-barry-private.png); }*/
-/*.section-22 .tile-509 .tile {*/
-/*    background-image: url(../img/cyberbearz-barry-officer.png); }*/
-/*.section-22 .tile-510 .tile {*/
-/*    background-image: url(../img/cyberbearz-barry-elite.png); }*/
-/*.section-22 .tile-511 .tile {*/
-/*    background-image: url(../img/cyberbearz-barry-general.png); }*/
-/*.section-22 .tile-512 .tile {*/
-/*    background-image: url(../img/cyberbearz-barry-legendary.png); }*/
+.section-22 .tile-508 .tile {
+    background-image: url(https://www.bearz.tech/sites/all/themes/bootstrap/air/img/cyberbearz-barry-private.png); }
+.section-22 .tile-509 .tile {
+    background-image: url(https://www.bearz.tech/sites/all/themes/bootstrap/air/img/cyberbearz-barry-officer.png); }
+.section-22 .tile-510 .tile {
+    background-image: url(https://www.bearz.tech/sites/all/themes/bootstrap/air/img/cyberbearz-barry-elite.png); }
+.section-22 .tile-511 .tile {
+    background-image: url(https://www.bearz.tech/sites/all/themes/bootstrap/air/img/cyberbearz-barry-general.png); }
+.section-22 .tile-512 .tile {
+    background-image: url(https://www.bearz.tech/sites/all/themes/bootstrap/air/img/cyberbearz-barry-legendary.png); }
 
 .progress {
     background-color: #6a279c;
@@ -10524,40 +10525,40 @@ html.js .autocomplete-throbber.throbbing {
     margin-bottom: 13.5px; }
 
 .cards-bottom {
-    /*background-image: url(../img/cyberbearz_hero_full.png);*/
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 2048px;
-    width: 2048px;
-    height: 642px;
-    z-index: -2;
-    position: absolute;
-    bottom: 0;
-    left: -100%;
-    right: auto;
+    background-image: url(https://www.bearz.tech/sites/all/themes/bootstrap/air/img/cyberbearz_hero_full.png);
+    /*background-repeat: no-repeat;*/
+    /*background-position: center bottom;*/
+    /*background-size: 2048px;*/
+    /*width: 2048px;*/
+    /*height: 642px;*/
+    /*z-index: -2;*/
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*left: -100%;*/
+    /*right: auto;*/
     bottom: 0; }
-@media (max-width: 767px) {
-    .cards-bottom {
-        width: 100%;
-        left: 0; } }
+/*@media (max-width: 767px) {*/
+/*    !*.cards-bottom {*!*/
+/*    !*    width: 100%;*!*/
+/*    !*    left: 0; } }*!*/
 
 .cards-top {
-    /*background-image: url(../img/cyberbearz_hero_full_top.png);*/
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 2048px;
-    width: 2048px;
-    height: 642px;
-    z-index: -1;
-    position: absolute;
-    bottom: 0;
-    left: -100%;
-    right: auto;
+    background-image: url(https://www.bearz.tech/sites/all/themes/bootstrap/air/img/cyberbearz_hero_full_top.png);
+    /*background-repeat: no-repeat;*/
+    /*background-position: center bottom;*/
+    /*background-size: 2048px;*/
+    /*width: 2048px;*/
+    /*height: 642px;*/
+    /*z-index: -1;*/
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*left: -100%;*/
+    /*right: auto;*/
     bottom: 0; }
-@media (max-width: 767px) {
-    .cards-top {
-        width: 100%;
-        left: 0; } }
+/*@media (max-width: 767px) {*/
+/*    !*.cards-top {*!*/
+/*    !*    width: 100%;*!*/
+/*    !*    left: 0; } }*!*/
 
 @-webkit-keyframes anime {
     0% {

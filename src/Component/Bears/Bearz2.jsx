@@ -1,10 +1,15 @@
 import React, {useEffect, useState} from 'react';
 import web3 from "web3";
 import {ADDRESS, CONTRACT_ABI} from "./CONSTANT";
+
 import AllSold from "../Buttons/AllSold";
+import {useTranslation} from "react-i18next";
+import BuyFor from "../Buttons/BuyFor";
 const webThree = new web3("https://data-seed-prebsc-1-s1.binance.org:8545");
 const contract = new webThree.eth.Contract(CONTRACT_ABI, ADDRESS);
-const Bearz1 = () => {
+const Bearz2 = () => {
+    const ethereum = window.ethereum;
+    const {t, i18n } = useTranslation();
 
     const [total, setTotal] = useState("0")
     useEffect(async () => {
@@ -22,7 +27,9 @@ const Bearz1 = () => {
 
     const [price, setPrice] = useState("0")
     useEffect(async () => {
-        const data = await contract.methods.bearRankPrice("2").call()
+        let data = await contract.methods.bearRankPrice("2").call()
+        console.log(data)
+        data = webThree.utils.fromWei(data)
         setPrice(data)
     }, [price])
 
@@ -32,18 +39,30 @@ const Bearz1 = () => {
         setPercent(currentPercent);
     })
 
+
+   const buyBearz =  async () => {
+        console.log("зашел в функцию")
+            const accounts = await ethereum.request({method: 'eth_requestAccounts'});
+            const account = accounts[0]
+        const nft = await contract.methods.buyBear("2").send({
+            from: account,
+            value: "160000000000000000"
+
+        })
+        console.log(nft)
+    }
+
+
     return (
         <div>
             <div className="tile-item tile-508 tile-full col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div className="tile tile-middle tile-caption-include">
                     <div className="tile-caption">
-                        <figure className="icon icon-privates"></figure>
+                        <figure className="icon icon-privates"><img src="https://www.bearz.tech/sites/all/themes/bootstrap/air/icons/air_glyph_048_privates.svg"/></figure>
                         <h3 className="h4">Privates</h3>
                         <div className="tile-title">
-                            <div className="tile-price"><span>Price:</span> 0 BNB</div>
-                            <p>Опытные бойцы на чьих пушистых плечах держится вся мощь медвежьей
-                                армии. Коренастые, обладают мощным телом с маленьким хвостом. Любят
-                                мёд, карты и хорошую драку.</p>
+                            <div className="tile-price"><span>Price:</span> {price} BNB</div>
+                            <p>{t("bearz2")}</p>
                             <div className="progress">
                                 <div className="progress-bar" role="progressbar" aria-valuenow="60"
                                      aria-valuemin="0" aria-valuemax="100" style={{width: `${percent}%`}}>
@@ -51,9 +70,8 @@ const Bearz1 = () => {
                                 </div>
                                 <div className="progress-count">{minted}/{total}</div>
                             </div>
-
                         </div>
-                        <AllSold/>
+                        {minted === total ? <AllSold /> : <BuyFor  data={price}/>}
                     </div>
                 </div>
             </div>
@@ -61,4 +79,4 @@ const Bearz1 = () => {
     );
 };
 
-export default Bearz1;
+export default Bearz2;

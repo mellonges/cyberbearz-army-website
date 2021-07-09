@@ -29,7 +29,7 @@ const BearsTable = () => {
                                         className="tile-item tile-417 tile-full col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <div
                                             className="tile tile-img tile-top tile-left tile-caption-include color-bg v-b"
-                                            data-rjs="2" data-rjs-processed="true">image
+                                            data-rjs="2" data-rjs-processed="true">
                                             <div className="tile-caption"><h3>Много счастливых медведей.</h3>
                                                 <p>В качестве основы для NFT выступают: настоящие виды, медведи из
                                                     будущего и
@@ -38,7 +38,7 @@ const BearsTable = () => {
                                     </div>
                                     <div className="tile-item tile-419 tile-sm col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                         <div className="tile tile-img tile-bottom tile-center tile-caption-include"
-                                             data-rjs="2" data-rjs-processed="true">image
+                                             data-rjs="2" data-rjs-processed="true">
                                             <div className="tile-caption"><h3 className="h4">Пиксель-арт надолго в
                                                 моде.</h3>
                                                 <p>Благодаря Криптопанкам пиксельный стиль ещё долго будет
