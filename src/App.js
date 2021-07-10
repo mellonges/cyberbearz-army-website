@@ -8,7 +8,7 @@ import {ParallaxProvider} from "react-scroll-parallax";
 
 function App() {
     return (
-        <React.Suspense fallback={<LinearProgress color="secondary" />}>
+        <React.Suspense fallback={<LinearProgress  color="secondary" />}>
         <BrowserRouter>
             <ParallaxProvider>
             <div className="App">

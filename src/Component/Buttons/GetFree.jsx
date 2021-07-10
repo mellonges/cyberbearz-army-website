@@ -9,7 +9,7 @@ const GetFree =  () => {
         const accounts = await ethereum.request({method: 'eth_requestAccounts'});
         const account = accounts[0]
         const encodeABI = await contract.methods.buyBear("1").encodeABI();
-        await ethereum.request({
+        const response =  await ethereum.request({
             method: "eth_sendTransaction",
             params: [{
                 from: account,
@@ -18,6 +18,7 @@ const GetFree =  () => {
                 data: encodeABI
             }]
         })
+        console.log(`response: ${response}`)
     }
         return (
             <button onClick={() => free()} className={"btn btn-info"}>Get free!</button>

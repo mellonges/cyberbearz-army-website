@@ -10616,7 +10616,7 @@ html.js .autocomplete-throbber.throbbing {
     position: absolute;
     bottom: 0; }
 .tile-pixelart {
-    /*background-image: url(../img/cyberbearz-tile-pixelart.png);*/
+    background-image: url(https://www.bearz.tech/sites/all/themes/bootstrap/air/img/cyberbearz-tile-pixelart.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 256px;
@@ -10641,7 +10641,7 @@ html.js .autocomplete-throbber.throbbing {
     top: 0;
     left: 0; }
 .tile-barry {
-    /*background-image: url(../img/cyberbearz-tile-barry.png);*/
+    background-image: url(https://www.bearz.tech/sites/all/themes/bootstrap/air/img/cyberbearz-tile-barry.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 256px;
@@ -10803,3 +10803,5 @@ html.js .autocomplete-throbber.throbbing {
 @media (max-width: 991px) {
     .section-27 .strip-caption {
         margin-left: 77px; } }
+
+

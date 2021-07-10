@@ -5,8 +5,8 @@ import {ADDRESS, CONTRACT_ABI} from "./CONSTANT";
 import AllSold from "../Buttons/AllSold";
 import BuyFor from "../Buttons/BuyFor";
 import {useTranslation} from "react-i18next";
-const webThree = new web3("https://data-seed-prebsc-1-s1.binance.org:8545");
-const contract = new webThree.eth.Contract(CONTRACT_ABI, ADDRESS);
+const Web3 = new web3("https://data-seed-prebsc-1-s1.binance.org:8545");
+const contract = new Web3.eth.Contract(CONTRACT_ABI, ADDRESS);
 const Bearz6 = () => {
     const { t, i18n } = useTranslation();
     const [total, setTotal] = useState("0")
@@ -27,7 +27,7 @@ const Bearz6 = () => {
     const [price, setPrice] = useState("0")
     useEffect(async () => {
         let data = await contract.methods.bearRankPrice("6").call()
-        data = webThree.utils.fromWei(data)
+        data = Web3.utils.fromWei(data)
         setPrice(data)
     }, [price])
 
