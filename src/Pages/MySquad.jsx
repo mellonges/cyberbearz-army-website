@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {ADDRESS, CONTRACT_ABI} from "../Component/Bears/CONSTANT";
 import web3 from "web3";
 const Web3 = new web3("https://data-seed-prebsc-1-s1.binance.org:8545");
@@ -6,6 +6,7 @@ const contract = new Web3.eth.Contract(CONTRACT_ABI, ADDRESS);
 const ethereum = window.ethereum;
 
 const MySquad =  () => {
+    const [bearzAmount, setBearzAmount] = useState("0");
 
 
     useEffect(async () => {
@@ -13,8 +14,8 @@ const MySquad =  () => {
         const account = accounts[0];
         const data = await contract.methods.getBearzOfOwner(account).call();
         console.log(data)
-
-    })
+        setBearzAmount(data)
+    }, [])
 
     return (
         <>
@@ -29,11 +30,12 @@ const MySquad =  () => {
                                         <div
                                             className="tile-item tile-631 tile-full col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div className="tile tile-middle tile-center tile-caption-include">
-                                                <div className="tile-caption"><h1 className="h4">Son, there is not a
-                                                    single bear in your squad!</h1>
-                                                    <p><button className="btn btn-primary">Generate
-                                                        a bear</button></p>
-                                                </div>
+                                                {/*<div className="tile-caption"><h1 className="h4">Son, there is not a*/}
+                                                {/*    single bear in your squad!</h1>*/}
+                                                {/*    <p><button className="btn btn-primary">Generate*/}
+                                                {/*        a bear</button></p>*/}
+                                                {/*</div>*/}
+                                                <h2>You have a {bearzAmount.length} bears</h2>
                                             </div>
                                         </div>
                                         {/*<div className="tile-item tile-633 tile-full col-lg-12 col-md-12 col-sm-12 col-xs-12">*/}

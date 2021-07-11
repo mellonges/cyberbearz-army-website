@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BearsTable = () => {
+const   BearsTable = () => {
     return (
         <div>
             <section

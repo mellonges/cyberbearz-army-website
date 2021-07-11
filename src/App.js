@@ -10,13 +10,13 @@ function App() {
     return (
         <React.Suspense fallback={<LinearProgress  color="secondary" />}>
         <BrowserRouter>
-            <ParallaxProvider>
+            {/*<ParallaxProvider>*/}
             <div className="App">
                 <Navbar/>
                 <Route exact path="/" component={MainPage}/>
                 <Route exact path="/squade" component={MySquad}/>
             </div>
-            </ParallaxProvider>
+            {/*</ParallaxProvider>*/}
         </BrowserRouter>
         </React.Suspense>
 

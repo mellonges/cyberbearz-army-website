@@ -18,10 +18,10 @@ const Section = () => {
                         className="section-content-wrapper col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
                         <div className="section-content">
                             <div className="section-content-caption"><p className="section-eyebrow">War does not
-                                change</p><h2>Набери себе армию.</h2>
-                                <p>В CyberBearz Army служит 2 048 милых солдат медведей: рекруты, рядовые, офицеры,
-                                    специалисты и генералы. Все должности ограничены и имеют свои индивидуальные
-                                    привилегии на получение амуниции.</p></div>
+                                change</p><h2>Recruit your bear army.</h2>
+                                <p>4,096 cool bear soldiers serve in CyberBearz Army: recruits, privates, officers,
+                                    elites, and generals. All ranks are limited and have their own privileges for
+                                    getting ammunition. We give away 512 recruits for free!</p></div>
                         </div>
                     </div>
                 </div>
@@ -31,12 +31,12 @@ const Section = () => {
                     <div className="row">
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div className="row tile-items">
-                               <Bearz1 />
-                               <Bearz2 />
-                                <Bearz3 />
-                                <Bearz4 />
-                                <Bearz5 />
-                                <Bearz6 />
+                                <Bearz1/>
+                                <Bearz2/>
+                                <Bearz3/>
+                                <Bearz4/>
+                                <Bearz5/>
+                                <Bearz6/>
                             </div>
                         </div>
                     </div>

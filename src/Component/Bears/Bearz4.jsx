@@ -1,14 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import GetFree from "../Buttons/GetFree";
 import web3 from "web3";
 import {ADDRESS, CONTRACT_ABI} from "./CONSTANT";
 import BuyFor from "../Buttons/BuyFor";
 import AllSold from "../Buttons/AllSold";
-import {useTranslation} from "react-i18next";
 const webThree = new web3("https://data-seed-prebsc-1-s1.binance.org:8545");
 const contract = new webThree.eth.Contract(CONTRACT_ABI, ADDRESS);
 const Bearz4 = () => {
-    const { t, i18n } = useTranslation();
     const [total, setTotal] = useState("0")
     useEffect(async () => {
         const data = await contract.methods.amountTotal("4").call()
@@ -45,7 +42,7 @@ const Bearz4 = () => {
                         <h3 className="h4">Elite</h3>
                         <div className="tile-title">
                             <div className="tile-price"><span>Price:</span> {price} BNB</div>
-                            <p>{t("bearz4")}</p>
+                            <p>Bears with special skills in conducting special-forces raids such as sabotage, espionage, abduction. Watch your honey!</p>
                             <div className="progress">
                                 <div className="progress-bar" role="progressbar" aria-valuenow="60"
                                      aria-valuemin="0" aria-valuemax="100" style={{width: `${percent}%`}}>

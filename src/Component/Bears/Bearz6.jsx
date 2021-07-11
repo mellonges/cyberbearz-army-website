@@ -1,14 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import GetFree from "../Buttons/GetFree";
 import web3 from "web3";
 import {ADDRESS, CONTRACT_ABI} from "./CONSTANT";
 import AllSold from "../Buttons/AllSold";
 import BuyFor from "../Buttons/BuyFor";
-import {useTranslation} from "react-i18next";
 const Web3 = new web3("https://data-seed-prebsc-1-s1.binance.org:8545");
 const contract = new Web3.eth.Contract(CONTRACT_ABI, ADDRESS);
 const Bearz6 = () => {
-    const { t, i18n } = useTranslation();
     const [total, setTotal] = useState("0")
     useEffect(async () => {
         const data = await contract.methods.amountTotal("6").call()
@@ -44,11 +41,14 @@ const Bearz6 = () => {
         <div className="tile-item tile-512 tile-full col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div className="tile tile-middle tile-caption-include">
                 <div className="tile-caption">
-                    <figure className="icon icon-legendary"><img src="https://www.bearz.tech/sites/all/themes/bootstrap/air/icons/air_glyph_051_legendary.svg"/></figure>
+                    <figure className="icon icon-legendary"><img
+                        src="https://www.bearz.tech/sites/all/themes/bootstrap/air/icons/air_glyph_051_legendary.svg"/>
+                    </figure>
                     <h3 className="h4">Legendary</h3>
                     <div className="tile-title">
                         <div className="tile-price"><span>Price:</span> {price} BNB</div>
-                        <p>{t("bearz6")}</p>
+                        <p>The pride of the bear community. They are the true gods of war tempered in the volcano of
+                            endless battles. Besides, they have the most beautiful equipment and the softest fur.</p>
                         <div className="progress">
                             <div className="progress-bar" role="progressbar" aria-valuenow="60"
                                  aria-valuemin="0" aria-valuemax="100" style={{width: `${percent}%`}}>
@@ -57,7 +57,7 @@ const Bearz6 = () => {
                             <div className="progress-count">{minted}/{total}</div>
                         </div>
                     </div>
-                    {minted === total ? <AllSold /> : <BuyFor rangID={"6"} price={price} />}
+                    {minted === total ? <AllSold/> : <BuyFor rangID={"6"} price={price}/>}
                 </div>
             </div>
         </div>

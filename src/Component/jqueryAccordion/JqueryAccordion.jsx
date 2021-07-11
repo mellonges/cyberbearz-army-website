@@ -13,13 +13,13 @@ const JqueryAccordion = () => {
                             <div className="section-content">
                                 <div className="section-content-caption"><p className="section-eyebrow">Platform</p>
                                     <h2>Binance Smart Chain.</h2>
-                                    <p>Покупая медведей, разработанных на смарт контракте по стандарту BEP-20, вы
-                                        поддерживаете развитие нового современного блокчейна Binance Smart Chain (BSC)
-                                        который быстрее, дешевле.</p>
+                                    <p>By purchasing the bears developed on the BEP-20 standard smart contract, you
+                                        contribute to the further evolution of Binance Smart Chain (BSC), that is a
+                                        modern, faster, and cheaper blockchain.</p>
 
                                     <p><a
                                         href="https://academy.binance.com/en/articles/an-introduction-to-binance-smart-chain-bsc"
-                                        className="link link-up" target="_blank">Читайте подробнее</a></p></div>
+                                        className="link link-up" target="_blank">Read more details</a></p></div>
                             </div>
                         </div>
                     </div>
@@ -29,52 +29,52 @@ const JqueryAccordion = () => {
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div className="stock stock-495">
                                 <a className="stock-title collapsed" data-toggle="collapse" href="#stock-495s"
-                                   aria-expanded="false" aria-controls="stock-495s">Низкие комиссии и скорость <span
+                                   aria-expanded="false" aria-controls="stock-495s">low fees and high speed<span
                                     className="icon icon-cross"></span></a>
                                 <div className="collapse" id="stock-495s">
-                                    <div className="stock-caption"><p>Binance Smart Chain предоставляет минимальная
-                                        комиссия при покупке 1 gwei равен 10^(-9) или 0.000000001 BNB. Посетите <a
+                                    <div className="stock-caption"><p>Binance Smart Chain provides a minimum fee for
+                                        buying 1 gwei that is 10^(-9) or 0.000000001 BNB. Visit Binance Gas Tracker <a
                                             href="https://bscscan.com/chart/gasprice" target="_blank">Ethereum Gas
-                                            Tracker</a>, чтобы узнать текущие цены на газ.</p>
-                                        <p>Небольшой интервал между блоками делает обработку транзакций быстрой — около
-                                            3 секунд. Более высокий по сравнению с Ethereum лимит газа также
-                                            положительно сказывается на пропускной способности, позволяя включать в
-                                            блоки большее число транзакций.</p>
+                                            Tracker</a>, to
+                                        check out the current gas price.</p>
+                                        <p>A small interval between blocks makes the processing of transactions faster.
+                                            It takes only about 3 seconds. A higher gas limit compared to Ethereum also
+                                            has a positive effect on throughput, allowing more transactions to be
+                                            included in blocks.</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="stock stock-496">
                                 <a className="stock-title collapsed" data-toggle="collapse" href="#stock-496s"
-                                   aria-expanded="false" aria-controls="stock-496s">Как купить и хранить <span
+                                   aria-expanded="false" aria-controls="stock-496s">How to purchase and store <span
                                     className="icon icon-cross"></span></a>
                                 <div className="collapse" id="stock-496s">
-                                    <div className="stock-caption"><p>Для покупки используется монета BNB.</p>
-                                        <p>Покупка и хранение NFT CyberBearz Army осуществляется через кошельки
-                                            криптовалют Trust Wallet и Metamask (<a
-                                                href="https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain"
-                                                target="_blank">подключение MetaMask к Binance Smart Chain</a>).</p>
+                                    <div className="stock-caption"><p>BNB coin is used for purchase.</p>
+                                        <p>Trust Wallet and Metamask cryptocurrency wallets (<a
+                                            href="https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain"
+                                            target="_blank">MetaMask connection to the Binance Smart Chain</a></p>
                                     </div>
                                 </div>
                             </div>
                             <div className="stock stock-497">
                                 <a className="stock-title collapsed" data-toggle="collapse" href="#stock-497s"
-                                   aria-expanded="false" aria-controls="stock-497s">Продажа и обмен <span
+                                   aria-expanded="false" aria-controls="stock-497s">Trade and exchange <span
                                     className="icon icon-cross"></span></a>
                                 <div className="collapse" id="stock-497s">
-                                    <div className="stock-caption"><p>Вы всегда можете подарить или обменять своего
-                                        медведя напрямую через кошельки криптовалют или через личный кабинет.</p>
-                                        <p>Позже вы сможете выставить свои NFT на продажу, либо через этот сайт, либо
-                                            через партнёрский маркетплейс.</p></div>
+                                    <div className="stock-caption"><p>ВYou can always present or exchange your bear
+                                        directly through cryptocurrency wallets or your personal account.</p>
+                                        <p>Later, you can list your NFTs for sale, either through this website or an
+                                            affiliate marketplace.</p></div>
                                 </div>
                             </div>
                             <div className="stock stock-513">
                                 <a className="stock-title collapsed" data-toggle="collapse" href="#stock-513s"
-                                   aria-expanded="false" aria-controls="stock-513s">Смарт Контракт <span
+                                   aria-expanded="false" aria-controls="stock-513s">Smart Contract<span
                                     className="icon icon-cross"></span></a>
                                 <div className="collapse" id="stock-513s">
-                                    <div className="stock-caption"><p>CyberBearz Army создаются на основе
-                                        смарт-контракта Binance Smart Chain. Подлинность смарт контракта вы можете
-                                        посмотреть <a href="#" target="_blank">здесь</a>.</p></div>
+                                    <div className="stock-caption"><p>The CyberBearz Army is created based on the
+                                        Binance Smart Chain smart contract. You can check the smart contract
+                                        authentication  <a href="#" target="_blank">here</a>.</p></div>
                                 </div>
                             </div>
                         </div>
