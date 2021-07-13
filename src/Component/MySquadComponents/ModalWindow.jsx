@@ -15,7 +15,7 @@ const ModalWindow = ({data}) => {
                         <div className="modal-body">
                             <img style={{width: "30%", height: "30%"}}
                                  src="" />
-                            <h6>j</h6>
+                            <h6>TEST</h6>
                             <input style={{marginTop: "5%"}} type="text"
                                    className="form-control"
                                    placeholder="To address"/>

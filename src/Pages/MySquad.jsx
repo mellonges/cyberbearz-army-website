@@ -19,8 +19,12 @@ const MySquad = () => {
         const accounts = await ethereum.request({method: 'eth_requestAccounts'});
         const account = accounts[0];
         const data = await contract.methods.getBearzOfOwner(account).call();
+        console.log(data)
         const url = await Promise.all(data.map((i) =>  contract.methods.tokenURI(`${i}`).call()));
+        // console.log(url)
         const metaData = (await Promise.all(url.map((i) => axios.get(`${i}`)))).map((i) => i.data);
+        // const sortArray = metaData.map((obj, i) => obj[i].data[i])
+        // console.log(sortArray)
         if (metaData.length !== 0) setBearzAmount(metaData)
         console.log(metaData)
         setLoading(false)
@@ -36,7 +40,7 @@ const MySquad = () => {
                             <div className="row">
                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div className="row tile-items">
-                                        { loading ? <Loader /> : bearzAmount === 0 ? <GenerateBearz /> : bearzAmount.map((i) => <BearzComponent key={i.id} data={i} /> )}
+                                        {loading ? <Loader /> : bearzAmount === 0 ? <GenerateBearz /> : bearzAmount.map((i) => <BearzComponent key={i.name}  data={i} /> )}
                                     </div>
                                 </div>
                             </div>
