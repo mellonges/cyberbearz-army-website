@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import web3 from "web3";
-import {ADDRESS, CONTRACT_ABI} from "./CONSTANT";
+import {ADDRESS, CONTRACT_ABI} from "../../CONSTANT";
 
 import AllSold from "../Buttons/AllSold";
 import BuyFor from "../Buttons/BuyFor";

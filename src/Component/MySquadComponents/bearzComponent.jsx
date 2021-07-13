@@ -1,8 +1,9 @@
 import React from 'react';
-import getDataForModalWindow from "./getDataForModalWindow";
 
-const BearzComponent = ({data}) => {
-    // const tokenID = data.
+
+const BearzComponent = ({data, func}) => {
+    // const modalWindowFunc = func()
+    const tokenID = data.id
     return (
         <>
             <div
@@ -14,7 +15,7 @@ const BearzComponent = ({data}) => {
                             <h2 className="h5">{data.name}</h2>
                             {data.attributes.map((i) => <span key={i.name} className="label label-default">{i.value}</span>)}
                             <p>
-                                <button onClick={() => getDataForModalWindow(data.image, data.name)} className="btn btn-default" data-toggle="modal" data-target="#myModal">Send the bear</button>
+                                <button onClick={() => func(tokenID, data.image, data.name)} className="btn btn-default" data-toggle="modal" data-target="#myModal">Send the bear</button>
                             </p>
                         </div>
                     </div>

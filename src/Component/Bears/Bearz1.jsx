@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import GetFree from "../Buttons/GetFree";
 import web3 from "web3";
-import {ADDRESS, CONTRACT_ABI} from "./CONSTANT";
+import {ADDRESS, CONTRACT_ABI} from "../../CONSTANT";
 import AllSold from "../Buttons/AllSold";
 const webThree = new web3("https://data-seed-prebsc-1-s1.binance.org:8545");
 const contract = new webThree.eth.Contract(CONTRACT_ABI, ADDRESS);
