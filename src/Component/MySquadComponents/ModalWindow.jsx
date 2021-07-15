@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
 import web3 from "web3";
-import {ADDRESS, CONTRACT_ABI} from "../../CONSTANT";
+import {ADDRESS, CONTRACT_ABI, gasLimit} from "../../CONSTANT";
 
 const ethereum = window.ethereum;
 const ModalWindow = ({data}) => {
     const [inputValue, setInputValue] = useState(0);
     console.log(inputValue)
+    console.log(data.tokenID)
     const sendBearz = async () => {
         const Web3 = new web3("https://data-seed-prebsc-1-s1.binance.org:8545");
         const contract = new Web3.eth.Contract(CONTRACT_ABI, ADDRESS);
@@ -16,7 +17,8 @@ const ModalWindow = ({data}) => {
             method: "eth_sendTransaction",
             params: [{
                 from: accounts[0],
-                to: inputValue,
+                to: ADDRESS,
+                gasLimit: gasLimit,
                 data: encodeABI
             }]
 
@@ -33,13 +35,15 @@ const ModalWindow = ({data}) => {
                         <div className="modal-header">
                             <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span
                                 className="icon icon-cross"></span></button>
-                            <h4 className="modal-title" id="myModalLabel">Send the bear</h4>
+                            <h4 style={{textAlign: "center"}} className="modal-title" id="myModalLabel">Send the bear</h4>
 
                         </div>
                         <div className="modal-body">
-                            <img style={{width: "30%", height: "30%"}}
+                            <div style={{display: "flex"}}>
+                            <img style={{width: "30%", height: "30%", borderRadius: "20%"}}
                                  src={data.image}/>
-                            <h6>{data.name}</h6>
+                            <h4 style={{ textAlign: "right", margin: "5%", marginTop: "10%"}} >{data.name}</h4>
+                            </div>
                             <input onChange={(event) => setInputValue(event.target.value)} style={{marginTop: "5%"}}
                                    type="text"
                                    className="form-control"

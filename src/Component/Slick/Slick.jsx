@@ -56,6 +56,22 @@ export default function SimpleSlider() {
     };
     return (
         <div>
+            <section
+                className="section section-align-center section-lead section-bold section-theme-autoheight section-theme-darken section-eyebrow-include section-theme-indent-bottom-inside-md section-theme-indent-no-bottom-outside  section-33 section-i5">
+                <div className="container">
+                    <div className="row">
+                        <div
+                            className="section-content-wrapper col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                            <div className="section-content">
+                                <div className="section-content-caption"><p className="section-eyebrow">Possible
+                                    options</p><h2>What kind of bears are there?</h2>
+                                    <p>Here you can find examples of bears that can be generated randomly.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <Slider {...settings1}>
                 <div>
                     <h3> <img style={{width: "90%", height: "90%", borderRadius: 16}} src={"https://www.bearz.tech/sites/default/files/styles/catalog_img_xs/public/img/catalog/xs/1@2x.png"}/>

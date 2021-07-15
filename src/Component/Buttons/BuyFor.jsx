@@ -1,6 +1,6 @@
 import React from 'react';
 import web3 from "web3";
-import {ADDRESS, CONTRACT_ABI} from "../../CONSTANT";
+import {ADDRESS, CONTRACT_ABI, gasLimit} from "../../CONSTANT";
 const Web3 = new web3("https://data-seed-prebsc-1-s1.binance.org:8545");
 const contract = new Web3.eth.Contract(CONTRACT_ABI, ADDRESS);
 const ethereum = window.ethereum
@@ -20,6 +20,7 @@ const BuyFor = ({price, rangID}) => {
                 from: account,
                 to: ADDRESS,
                 value: priceWei,
+                gasLimit: gasLimit,
                 data: encodeABI
             }]
 
@@ -28,9 +29,9 @@ const BuyFor = ({price, rangID}) => {
 
 
     return (
-        <div>
+        <>
             <button onClick={() => buyBearz()} className={"btn btn-primary"}>Buy for {price} BNB</button>
-        </div>
+        </>
     );
 
 

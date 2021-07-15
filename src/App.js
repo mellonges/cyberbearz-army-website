@@ -5,6 +5,7 @@ import MySquad from "./Pages/MySquad";
 import Navbar from "./Component/Navbar/Navbar";
 import {LinearProgress} from "@material-ui/core";
 import Footer from "./Component/Footer/Footer";
+import Outfit from "./Pages/ Outfit";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Navbar/>
                 <Route exact path="/" component={MainPage}/>
                 <Route exact path="/squade" component={MySquad}/>
+                <Route exact path="/outfit" component={Outfit} />
                 <Footer />
             </div>
         </BrowserRouter>

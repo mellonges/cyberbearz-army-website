@@ -3,6 +3,7 @@ import web3 from "web3";
 import BuyFor from "../Buttons/BuyFor";
 import AllSold from "../Buttons/AllSold";
 import {ADDRESS, CONTRACT_ABI} from "../../CONSTANT";
+import BuyBearz from "../Buttons/BuyBearz";
 const webThree = new web3("https://data-seed-prebsc-1-s1.binance.org:8545");
 const contract = new webThree.eth.Contract(CONTRACT_ABI, ADDRESS);
 const Bearz3 = () => {
@@ -40,8 +41,8 @@ const Bearz3 = () => {
             <div className="tile-item tile-509 tile-full col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div className="tile tile-middle tile-caption-include">
                     <div className="tile-caption">
-                        <figure className="icon icon-officers"><img
-                            src="https://www.bearz.tech/sites/all/themes/bootstrap/air/icons/air_glyph_049_officers.svg"/>
+                        <figure className="icon icon-officers">
+                            {/*<img src="https://www.bearz.tech/sites/all/themes/bootstrap/air/icons/air_glyph_049_officers.svg"/>*/}
                         </figure>
                         <h3 className="h4">Officers</h3>
                         <div className="tile-title">
@@ -57,7 +58,7 @@ const Bearz3 = () => {
                             </div>
 
                         </div>
-                        {minted === total ? <AllSold/> : <BuyFor rangID={"3"} price={price}/>}
+                        {minted === total ? <AllSold/> : <BuyBearz rangID={"3"} price={price} />}
                     </div>
                 </div>
             </div>

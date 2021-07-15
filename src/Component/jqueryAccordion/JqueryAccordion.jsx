@@ -29,7 +29,7 @@ const JqueryAccordion = () => {
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div className="stock stock-495">
                                 <a className="stock-title collapsed" data-toggle="collapse" href="#stock-495s"
-                                   aria-expanded="false" aria-controls="stock-495s">low fees and high speed<span
+                                   aria-expanded="false" aria-controls="stock-495s">Low fees and high speed<span
                                     className="icon icon-cross"></span></a>
                                 <div className="collapse" id="stock-495s">
                                     <div className="stock-caption"><p>Binance Smart Chain provides a minimum fee for

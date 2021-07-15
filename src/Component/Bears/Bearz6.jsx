@@ -41,8 +41,8 @@ const Bearz6 = () => {
         <div className="tile-item tile-512 tile-full col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div className="tile tile-middle tile-caption-include">
                 <div className="tile-caption">
-                    <figure className="icon icon-legendary"><img
-                        src="https://www.bearz.tech/sites/all/themes/bootstrap/air/icons/air_glyph_051_legendary.svg"/>
+                    <figure className="icon icon-legendary">
+                        <img src="https://www.bearz.tech/sites/all/themes/bootstrap/air/icons/air_glyph_051_legendary.svg"/>
                     </figure>
                     <h3 className="h4">Legendary</h3>
                     <div className="tile-title">
@@ -57,7 +57,7 @@ const Bearz6 = () => {
                             <div className="progress-count">{minted}/{total}</div>
                         </div>
                     </div>
-                    {minted === total ? <AllSold/> : <BuyFor rangID={"6"} price={price}/>}
+                    {minted === total ? <AllSold/> : <BuyFor price={price} rangID={"6"} />}
                 </div>
             </div>
         </div>

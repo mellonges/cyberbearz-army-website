@@ -45,7 +45,7 @@ const Navbar = () => {
                              className="navbar-nav-wrapper">
                             <ul className="menu nav navbar-nav">
 
-                                <li className="first leaf"><a href="https://www.bearz.tech/faq" title="">Bear Outfit</a>
+                                <li className="first leaf"><NavLink  to="/outfit">Bear Outfit</NavLink>
                                 </li>
                                 <li className="leaf"><a href="https://www.bearz.tech/#" title="" className="nolink"
                                                         tabIndex="0">Twitter</a></li>

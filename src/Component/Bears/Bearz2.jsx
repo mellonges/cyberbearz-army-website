@@ -4,6 +4,8 @@ import {ADDRESS, CONTRACT_ABI} from "../../CONSTANT";
 
 import AllSold from "../Buttons/AllSold";
 import BuyFor from "../Buttons/BuyFor";
+import BuySome from "../Buttons/BuySome";
+import BuyBearz from "../Buttons/BuyBearz";
 const webThree = new web3("https://data-seed-prebsc-1-s1.binance.org:8545");
 const contract = new webThree.eth.Contract(CONTRACT_ABI, ADDRESS);
 const Bearz2 = () => {
@@ -18,8 +20,8 @@ const Bearz2 = () => {
 
     const [minted, setMinted] = useState("0")
     useEffect(async () => {
-        const data = await contract.methods.amountMinted("2").call()
-        setMinted(data)
+        // const data = await contract.methods.amountMinted("2").call()
+        // setMinted(data)
     }, [minted])
 
 
@@ -58,8 +60,8 @@ const Bearz2 = () => {
             <div className="tile-item tile-508 tile-full col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div className="tile tile-middle tile-caption-include">
                     <div className="tile-caption">
-                        <figure className="icon icon-privates"><img
-                            src="https://www.bearz.tech/sites/all/themes/bootstrap/air/icons/air_glyph_048_privates.svg"/>
+                        <figure className="icon icon-privates">
+                            {/*<img src="https://www.bearz.tech/sites/all/themes/bootstrap/air/icons/air_glyph_048_privates.svg"/>*/}
                         </figure>
                         <h3 className="h4">Privates</h3>
                         <div className="tile-title">
@@ -75,7 +77,9 @@ const Bearz2 = () => {
                                 <div className="progress-count">{minted}/{total}</div>
                             </div>
                         </div>
-                        {minted === total ? <AllSold/> : <BuyFor rangID={"2"} price={price}/>}
+                        {minted === total ? <AllSold/> : <BuyBearz  price={price} rangID={"2"} /> }
+
+
                     </div>
                 </div>
             </div>

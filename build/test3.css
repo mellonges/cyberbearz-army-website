@@ -3003,16 +3003,16 @@ fieldset[disabled] .btn-info.focus {
 
 .btn-warning {
     color: #fff;
-    background-color: #e65d1d;
-    border-color: #e65d1d; }
+    background-color: #6a279c !important ;
+    border-color: #6a279c; !important; }
 .btn-warning:focus, .btn-warning.focus {
     color: #fff;
-    background-color: #bb4a15;
-    border-color: #762f0d; }
+    background-color: #3b1350 !important;
+    border-color: #6a279c; !important; }
 .btn-warning:hover {
     color: #fff;
-    background-color: #bb4a15;
-    border-color: #b24614; }
+    background-color: #40145c !important;
+    border-color: #6a279c !important; }
 .btn-warning:active, .btn-warning.active,
 .open > .btn-warning.dropdown-toggle {
     color: #fff;
@@ -3154,6 +3154,8 @@ tbody.collapse.in {
     -webkit-transition-timing-function: ease;
     -o-transition-timing-function: ease;
     transition-timing-function: ease; }
+
+
 
 .caret {
     display: inline-block;
@@ -7105,7 +7107,7 @@ body.toolbar .edit:hover, body.toolbar .edit:focus, body.toolbar .edit:active {
     opacity: 0.8; }
 
 body.toolbar .section-theme-inverse .edit .icon-edit,
-body.toolbar .section-theme-blackout .edit .icon-edit,
+body.toolbar .section-theme-blackout .edit -edit,
 /*body.toolbar .section-img .edit .icon-edit {*/
     /*background-image: url(../icons/air_glyph_012a_edit.svg); }*/
 
@@ -10212,14 +10214,14 @@ html.js .autocomplete-throbber.throbbing {
     margin-bottom: 11px;
     float: left;
     margin-right: 22px; }
-/*.icon-ios-twitter {*/
-/*    background-image: url(../img/twitter-icon-112.png); }*/
-/*.icon-ios-discord {*/
-/*    background-image: url(../img/discord-icon-112.png); }*/
-/*.icon-ios-instagram {*/
-/*    background-image: url(../img/instagram-icon-112.png); }*/
+.icon-ios-twitter {
+    background-image: url(images/twitter-icon-112.png); }
+.icon-ios-discord {
+    background-image: url(images/discord-icon-112.png); }
+.icon-ios-instagram {
+    background-image: url(images/instagram-icon-112.png); }
 .icon-bearz {
-    /*background-image: url(../icons/air_glyph_046_cyberbearzarmy.svg);*/
+    background-image: url(images/cyberbearzarmy_middle.svg);
     width: 198px;
     height: 128px;
     background-size: 100%;
@@ -10227,46 +10229,50 @@ html.js .autocomplete-throbber.throbbing {
     margin-right: auto;
     margin-bottom: 22px; }
 .icon-bsc {
-    /*background-image: url(../icons/air_glyph_052_bsc.svg);*/
-    width: 276px;
-    height: 36px;
+    background-image: url(images/air_glyph_052_bsc.svg);
+    background-repeat: no-repeat;
+    width: 210px;
+    height: 58px;
     background-size: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 22px;
     margin-bottom: 44px; }
 .icon-generals {
-    /*background-image: url(../icons/air_glyph_045_general.svg);*/
+    /*background-image: url(images/air_glyph_045_general.svg);*/
     background-size: 96px;
     height: 56px;
     width: 96px; }
 @media (max-width: 767px) {
     .icon-generals {
+        /*background-image: url(images/air_glyph_045_general.svg);*/
         background-size: 72px;
         height: 42px;
         width: 72px; } }
 .icon-recruits {
-    background-image: url(https://www.bearz.tech/sites/all/themes/bootstrap/air/icons/air_glyph_047_recruits.svg);
+    /*background-image: url(images/air_glyph_047_recruits.svg);*/
     background-size: 48px;
     height: 56px;
     width: 52px; }
 @media (max-width: 767px) {
     .icon-recruits {
+        background-image: url(images/air_glyph_050_elite.svg);
         background-size: 40px;
         height: 44px;
         width: 40px; } }
 .icon-privates {
-    /*background-image: url(../icons/air_glyph_048_privates.svg);*/
+    background-image: url(images/air_glyph_048_privates.svg);
     background-size: 48px;
     height: 56px;
     width: 52px; }
 @media (max-width: 767px) {
     .icon-privates {
+        background-image: url(images/air_glyph_048_privates.svg);
         background-size: 40px;
         height: 44px;
         width: 40px; } }
 .icon-officers {
-    background-image: url(https://www.bearz.tech/sites/all/themes/bootstrap/air/icons/air_glyph_049_officers.svg);
+    background-image: url(images/air_glyph_049_officers.svg);
     background-size: 48px;
     height: 56px;
     width: 52px; }
@@ -10276,7 +10282,7 @@ html.js .autocomplete-throbber.throbbing {
         height: 42px;
         width: 40px; } }
 .icon-elite {
-    /*background-image: url(../icons/air_glyph_050_elite.svg);*/
+    background-image: url(images/air_glyph_050_elite.svg);
     background-size: 48px;
     height: 56px;
     width: 52px; }
@@ -10286,21 +10292,22 @@ html.js .autocomplete-throbber.throbbing {
         height: 44px;
         width: 40px; } }
 .icon-legendary {
-    /*background-image: url(../icons/air_glyph_051_legendary.svg);*/
+    background-image: url(images/air_glyph_051_legendary.svg);
     background-size: 48px;
     height: 56px;
     width: 52px; }
 @media (max-width: 767px) {
     .icon-legendary {
+        background-image: url(images/air_glyph_051_legendary.svg);
         background-size: 40px;
         height: 44px;
         width: 40px; } }
-/*.icon-guilch {*/
-/*    background-image: url(../icons/air_glyph_053_guilch.svg); }*/
-/*.icon-stock {*/
-/*    background-image: url(../icons/air_glyph_054_up.svg); }*/
-/*.icon-ticket {*/
-/*    background-image: url(../icons/air_glyph_055_ticket.svg); }*/
+.icon-guilch {
+    background-image: url(images/air_glyph_053_guilch.svg); }
+.icon-stock {
+    background-image: url(images/); }
+.icon-ticket {
+    background-image: url(../icons/air_glyph_055_ticket.svg); }
 
 .tile-caption p {
     font-weight: 600; }
@@ -10420,7 +10427,7 @@ html.js .autocomplete-throbber.throbbing {
 					bottom: 0;
 				}*/ }
 .section-22 .tile-409 .tile {
-    background-image: url(https://www.bearz.tech/sites/all/themes/bootstrap/air/img/cyberbearz-barry-recruit.png);
+    background-image: url(images/cyberbearz-barry-recruit.png);
 }
 .section-22 .tile-409 h3 {
     color: #ececec; }
@@ -10431,15 +10438,15 @@ html.js .autocomplete-throbber.throbbing {
 .section-22 .tile-409 .progress-count {
     color: #0beaff; }
 .section-22 .tile-508 .tile {
-    background-image: url(https://www.bearz.tech/sites/all/themes/bootstrap/air/img/cyberbearz-barry-private.png); }
+    background-image: url(images/cyberbearz-barry-recruit.png); }
 .section-22 .tile-509 .tile {
-    background-image: url(https://www.bearz.tech/sites/all/themes/bootstrap/air/img/cyberbearz-barry-officer.png); }
+    background-image: url(images/cyberbearz-barry-recruit.png); }
 .section-22 .tile-510 .tile {
-    background-image: url(https://www.bearz.tech/sites/all/themes/bootstrap/air/img/cyberbearz-barry-elite.png); }
+    background-image: url(images/cyberbearz-barry-elite.png); }
 .section-22 .tile-511 .tile {
-    background-image: url(https://www.bearz.tech/sites/all/themes/bootstrap/air/img/cyberbearz-barry-general.png); }
+    background-image: url(images/cyberbearz-barry-general.png); }
 .section-22 .tile-512 .tile {
-    background-image: url(https://www.bearz.tech/sites/all/themes/bootstrap/air/img/cyberbearz-barry-legendary.png); }
+    background-image: url(images/cyberbearz-barry-legendary.png); }
 
 .progress {
     background-color: #6a279c;
@@ -10525,7 +10532,7 @@ html.js .autocomplete-throbber.throbbing {
     margin-bottom: 13.5px; }
 
 .cards-bottom {
-    background-image: url(https://www.bearz.tech/sites/all/themes/bootstrap/air/img/cyberbearz_hero_full.png);
+    background-image: url(images/cyberbearz_hero_full.png);
     /*background-repeat: no-repeat;*/
     /*background-position: center bottom;*/
     /*background-size: 2048px;*/
@@ -10543,7 +10550,7 @@ html.js .autocomplete-throbber.throbbing {
 /*    !*    left: 0; } }*!*/
 
 .cards-top {
-    background-image: url(https://www.bearz.tech/sites/all/themes/bootstrap/air/img/cyberbearz_hero_full_top.png);
+    background-image: url(images/cyberbearz_hero_full_top.png);
     /*background-repeat: no-repeat;*/
     /*background-position: center bottom;*/
     /*background-size: 2048px;*/
@@ -10616,7 +10623,7 @@ html.js .autocomplete-throbber.throbbing {
     position: absolute;
     bottom: 0; }
 .tile-pixelart {
-    background-image: url(https://www.bearz.tech/sites/all/themes/bootstrap/air/img/cyberbearz-tile-pixelart.png);
+    background-image: url(images/cyberbearz-tile-pixelart.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 256px;
@@ -10631,7 +10638,7 @@ html.js .autocomplete-throbber.throbbing {
         position: absolute;
         top: 0; } }
 .tile-collection {
-    /*background-image: url(../img/cyberbearz-tile-collection.png);*/
+    background-image: url(images/cyberbearz-tile-collection.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 512px;
@@ -10641,7 +10648,7 @@ html.js .autocomplete-throbber.throbbing {
     top: 0;
     left: 0; }
 .tile-barry {
-    background-image: url(https://www.bearz.tech/sites/all/themes/bootstrap/air/img/cyberbearz-tile-barry.png);
+    background-image: url(images/cyberbearz-tile-barry.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 256px;
@@ -10651,7 +10658,7 @@ html.js .autocomplete-throbber.throbbing {
     position: absolute;
     bottom: 0; }
 .tile-bubble {
-    /*background-image: url(../img/cyberbearz-tile-bubble.png);*/
+    background-image: url(images/cyberbearz-tile-bubble.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 512px;
@@ -10667,7 +10674,7 @@ html.js .autocomplete-throbber.throbbing {
         position: absolute;
         bottom: 24px; } }
 .tile-technology {
-    /*background-image: url(../img/cyberbearz-tile-technology.png);*/
+    background-image: url(images/cyberbearz-tile-technology.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 1024px;
@@ -10691,7 +10698,7 @@ html.js .autocomplete-throbber.throbbing {
     .tile-technology {
         right: -428px; } }
 .tile-gameplay {
-    /*background-image: url(../img/cyberbearz-tile-gameplay.png);*/
+    background-image: url(images/cyberbearz-tile-gameplay.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 512px;

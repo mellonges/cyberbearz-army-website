@@ -23,14 +23,11 @@ const MySquad = () => {
         const accounts = await ethereum.request({method: 'eth_requestAccounts'});
         const account = accounts[0];
         const data = await contract.methods.getBearzOfOwner(account).call();
-        // console.log(data)
         const url = await Promise.all(data.map((i) =>  contract.methods.tokenURI(`${i}`).call()));
-        // console.log(url)
         const metaData = (await Promise.all(url.map((i) => axios.get(`${i}`)))).map((i) => i.data);
         const sortArray = metaData.map((obj, i) => ({...obj, id: data[i]}))
         console.log(sortArray)
         if (metaData.length !== 0) setBearzAmount(sortArray)
-        // console.log(metaData)
         setLoading(false)
     }, [])
 
