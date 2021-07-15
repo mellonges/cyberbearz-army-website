@@ -18,7 +18,7 @@ const ModalWindow = ({data}) => {
             params: [{
                 from: accounts[0],
                 to: ADDRESS,
-                gasLimit: gasLimit,
+                gas: gasLimit.toString(16),
                 data: encodeABI
             }]
 

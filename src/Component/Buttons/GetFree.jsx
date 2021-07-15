@@ -15,7 +15,7 @@ const GetFree =  () => {
                 from: account,
                 to: ADDRESS,
                 value: "0",
-                gasLimit: gasLimit,
+                gas: gasLimit.toString(16),
                 data: encodeABI
             }]
         })

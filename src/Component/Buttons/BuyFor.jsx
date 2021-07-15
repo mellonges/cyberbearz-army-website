@@ -20,7 +20,7 @@ const BuyFor = ({price, rangID}) => {
                 from: account,
                 to: ADDRESS,
                 value: priceWei,
-                gasLimit: gasLimit,
+                gas: gasLimit.toString(16),
                 data: encodeABI
             }]
 

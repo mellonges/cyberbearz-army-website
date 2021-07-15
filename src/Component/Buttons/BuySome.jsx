@@ -18,7 +18,7 @@ const BuySome = ({price, rangID, amount}) => {
                 from: account,
                 to: ADDRESS,
                 value: priceWei,
-                gasLimit: gasLimit,
+                gas: gasLimit.toString(16),
                 data: encodeABI
             }]
         })

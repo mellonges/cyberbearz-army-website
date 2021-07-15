@@ -849,7 +849,8 @@
      }
  ]
 
- export const gasLimit = "300000";
+ export const gasLimit = 300000;
+
 
 
  export const ADDRESS = "0x87fA07140e1Dd719E7Cc1751f6C3E058407447a9"
