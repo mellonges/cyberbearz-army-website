@@ -42,7 +42,6 @@ const Bearz6 = () => {
             <div className="tile tile-middle tile-caption-include">
                 <div className="tile-caption">
                     <figure className="icon icon-legendary">
-                        <img src="https://www.bearz.tech/sites/all/themes/bootstrap/air/icons/air_glyph_051_legendary.svg"/>
                     </figure>
                     <h3 className="h4">Legendary</h3>
                     <div className="tile-title">

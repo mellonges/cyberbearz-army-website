@@ -41,8 +41,7 @@ const Bearz5 = () => {
             <div className="tile-item tile-511 tile-full col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div className="tile tile-middle tile-caption-include">
                     <div className="tile-caption">
-                        <figure className="icon icon-generals">
-                            <img src="https://www.bearz.tech/sites/all/themes/bootstrap/air/icons/air_glyph_045_general.svg"/>
+                        <figure className="icon icon-general">
                         </figure>
                         <h3 className="h4">Generals</h3>
                         <div className="tile-title">

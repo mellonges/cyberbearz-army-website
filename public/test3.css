@@ -10234,18 +10234,18 @@ html.js .autocomplete-throbber.throbbing {
     margin-top: 22px;
     margin-bottom: 44px; }
 .icon-generals {
-    /*background-image: url(images/air_glyph_045_general.svg);*/
+    background-image: url(images/air_glyph_045_general.svg) !important;
     background-size: 96px;
     height: 56px;
     width: 96px; }
 @media (max-width: 767px) {
     .icon-generals {
-        /*background-image: url(images/air_glyph_045_general.svg);*/
+        /*background-image: url(images/air_glyph_045_general.svg) !important;*/
         background-size: 72px;
         height: 42px;
         width: 72px; } }
 .icon-recruits {
-    /*background-image: url(images/air_glyph_047_recruits.svg);*/
+    background-image: url(images/air_glyph_047_recruits.svg);
     background-size: 48px;
     height: 56px;
     width: 52px; }
@@ -10287,7 +10287,7 @@ html.js .autocomplete-throbber.throbbing {
         height: 44px;
         width: 40px; } }
 .icon-legendary {
-    background-image: url(images/air_glyph_051_legendary.svg);
+    background-image: url(images/air_glyph_051_legendary.svg) !important;
     background-size: 48px;
     height: 56px;
     width: 52px; }
@@ -10299,8 +10299,8 @@ html.js .autocomplete-throbber.throbbing {
         width: 40px; } }
 
 
-.icon-ticket {
-    background-image: url(../icons/air_glyph_055_ticket.svg); }
+/*.icon-ticket {*/
+/*    background-image: url(../icons/air_glyph_055_ticket.svg); }*/
 
 .tile-caption p {
     font-weight: 600; }
@@ -10431,9 +10431,9 @@ html.js .autocomplete-throbber.throbbing {
 .section-22 .tile-409 .progress-count {
     color: #0beaff; }
 .section-22 .tile-508 .tile {
-    background-image: url(images/cyberbearz-barry-recruit.png); }
+    background-image: url(images/cyberbearz-barry-private.png); }
 .section-22 .tile-509 .tile {
-    background-image: url(images/cyberbearz-barry-recruit.png); }
+    background-image: url(images/cyberbearz-barry-officer.png); }
 .section-22 .tile-510 .tile {
     background-image: url(images/cyberbearz-barry-elite.png); }
 .section-22 .tile-511 .tile {
@@ -11015,3 +11015,15 @@ hr {
     background-image: url(images/barry-cybereye-elite.png);
 }
 
+
+.icon-general {
+    background-image: url(images/air_glyph_045_general.svg) !important;
+    background-size: 96px;
+    height: 56px;
+    width: 96px; }
+@media (max-width: 767px) {
+    .icon-general {
+        /*background-image: url(images/air_glyph_045_general.svg) !important;*/
+        background-size: 72px;
+        height: 42px;
+        width: 72px; } }

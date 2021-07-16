@@ -40,7 +40,6 @@ const Bearz4 = () => {
                 <div className="tile tile-middle tile-caption-include">
                     <div className="tile-caption">
                         <figure className="icon icon-elite">
-                            {/*<img src="https://www.bearz.tech/sites/all/themes/bootstrap/air/icons/air_glyph_050_elite.svg"/>*/}
                         </figure>
                         <h3 className="h4">Elite</h3>
                         <div className="tile-title">
