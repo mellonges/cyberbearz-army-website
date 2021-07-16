@@ -9729,16 +9729,16 @@ html.js .autocomplete-throbber.throbbing {
     transition-delay: 0.5s; }
 
 .icon {
-    background: no-repeat center center;
-    background-size: 33px;
-    height: 33px;
-    width: 33px;
-    position: relative;
-    -moz-transition: opacity 0.2s ease-out;
-    -ms-transition: opacity 0.2s ease-out;
-    -webkit-transition: opacity 0.2s ease-out;
-    -o-transition: opacity 0.2s ease-out;
-    transition: opacity 0.2s ease-out;
+    /*background: no-repeat center center;*/
+    /*background-size: 33px;*/
+    /*height: 33px;*/
+    /*width: 33px;*/
+    /*position: relative;*/
+    /*-moz-transition: opacity 0.2s ease-out;*/
+    /*-ms-transition: opacity 0.2s ease-out;*/
+    /*-webkit-transition: opacity 0.2s ease-out;*/
+    /*-o-transition: opacity 0.2s ease-out;*/
+    /*transition: opacity 0.2s ease-out;*/
     /*&-drupal {
 		background-image: url(../icons/air_glyph_013_drupal.svg);
     width: 133px;
@@ -10159,17 +10159,8 @@ html.js .autocomplete-throbber.throbbing {
 /*    margin-right: auto;*/
 /*    margin-top: 22px;*/
 /*    margin-bottom: 44px; }*/
-.icon-generals {
-    /*background-image: url(images/air_glyph_045_general.svg);*/
-    background-size: 96px;
-    height: 56px;
-    width: 96px; }
-@media (max-width: 767px) {
-    .icon-generals {
-        /*background-image: url(images/air_glyph_045_general.svg);*/
-        background-size: 72px;
-        height: 42px;
-        width: 72px; } }
+
+
 .icon-recruits {
     background-image: url(images/air_glyph_047_recruits.svg);
     background-size: 48px;
@@ -11135,3 +11126,6 @@ background-image: url(images/air_glyph_050_elite.svg);
 /*    background-color: #6a279c !important;*/
 
 }
+
+
+
