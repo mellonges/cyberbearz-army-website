@@ -42,11 +42,9 @@ export default function SimpleSlider() {
         speed: 7500,
         slidesToShow: 9,
         pauseOnHover: false,
-        arrows: false
-        // dots: true,
-        // infinite: true,
-        // slidesToShow: 8,
-        // slidesToScroll: 0,
+        arrows: false,
+        variableWidth: true,
+        adaptiveHeight: true
 
 
 
@@ -57,11 +55,12 @@ export default function SimpleSlider() {
         autoplaySpeed: 0,
         cssEase: 'linear',
         speed: 5000,
-        // dots: true,
         pauseOnHover: false,
         infinite: true,
         slidesToShow: 9,
-        arrows: false
+        arrows: false,
+        variableWidth: true,
+        adaptiveHeight: true
 
 
     };
@@ -69,14 +68,12 @@ export default function SimpleSlider() {
         autoplay: true,
         autoplaySpeed: 0,
         cssEase: 'linear',
-        // arrows: false,
         speed: 2500,
         pauseOnHover: false,
-        // dots: true,
-        // accessibility: false,
-        // infinite: true,
         slidesToShow: 9,
-        arrows: false
+        arrows: false,
+        variableWidth: true,
+        adaptiveHeight: true
 
 
 
