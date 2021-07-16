@@ -10214,12 +10214,7 @@ html.js .autocomplete-throbber.throbbing {
     margin-bottom: 11px;
     float: left;
     margin-right: 22px; }
-.icon-ios-twitter {
-    background-image: url(images/twitter-icon-112.png); }
-.icon-ios-discord {
-    background-image: url(images/discord-icon-112.png); }
-.icon-ios-instagram {
-    background-image: url(images/instagram-icon-112.png); }
+
 .icon-bearz {
     background-image: url(images/cyberbearzarmy_middle.svg);
     width: 198px;
@@ -10302,10 +10297,8 @@ html.js .autocomplete-throbber.throbbing {
         background-size: 40px;
         height: 44px;
         width: 40px; } }
-.icon-guilch {
-    background-image: url(images/air_glyph_053_guilch.svg); }
-.icon-stock {
-    background-image: url(images/); }
+
+
 .icon-ticket {
     background-image: url(../icons/air_glyph_055_ticket.svg); }
 
@@ -10811,4 +10804,214 @@ html.js .autocomplete-throbber.throbbing {
     .section-27 .strip-caption {
         margin-left: 77px; } }
 
+
+.icon-guilch {
+    background-image: url(images/air_glyph_053_guilch.svg) !important;
+}
+
+.icon-stock {
+    background-image: url(images/air_glyph_054_up.svg) !important;
+}
+
+.icon-ticket  {
+    background-image: url(images/air_glyph_055_ticket.svg) !important;
+}
+
+.icon-ios-twitter {
+    background-image: url(images/twitter-icon-112.png) !important;
+}
+
+
+.icon-ios-discord {
+    background-image: url(images/discord-icon-112.png) !important;
+
+}
+
+.icon-ios-instagram {
+    background-image: url(images/instagram-icon-112.png) !important;
+}
+
+
+.barry-body-armor {
+    background-image: url(images/cyberbearz-tile-barry.png);
+}
+
+hr {
+    margin-top: 26px;
+    margin-bottom: 26px;
+    border-top: 1px solid #dadada;
+}
+
+.barry-shadow {
+    background-image: url(images/barry-shadow.png);
+}
+
+.barry-polar {
+    background-image: url(images/barry-polar.png);
+}
+
+.barry-panda {
+    background-image: url(images/barry-panda.png);
+}
+
+.barry-kumamon {
+    background-image: url(images/barry-kumamon.png);
+}
+
+.barry-winnie {
+    background-image: url(images/barry-winnie.png);
+}
+
+.barry-brown {
+    background-image: url(images/barry-brown.png);
+}
+
+.barry-grizzly {
+    background-image: url(images/barry-grizzly.png);
+}
+
+.barry-green {
+    background-image: url(images/barry-green.png);
+}
+
+.barry-purple {
+    background-image: url(images/barry-purple.png);
+}
+
+.barry-pink {
+    background-image: url(images/barry-pink.png);
+}
+
+.barry-blue {
+    background-image: url(images/barry-blue.png);
+}
+
+.barry-black {
+    background-image: url(images/barry-black.png);
+}
+
+.barry-red {
+    background-image: url(images/barry-red.png);
+}
+
+.barry-khaki {
+    background-image: url(images/barry-red.png);
+}
+
+
+.barry-himalayan {
+    background-image: url(images/barry-himalayan.png);
+}
+
+.barry-kodiak {
+    background-image: url(images/barry-kodiak.png);
+}
+
+.barry-zombie {
+    background-image: url(images/barry-zombie.png);
+}
+
+.barry-cyborg {
+    background-image: url(images/barry-cyborg.png);
+}
+
+.barry-uniform-elite  {
+    background-image: url(images/barry-uniform-elite.png);
+}
+
+.barry-uniform-military {
+    background-image: url(images/barry-uniform-military.png);
+}
+
+.barry-uniform-police {
+    background-image: url(images/barry-uniform-police.png);
+}
+
+.barry-uniform-priest {
+    background-image: url(images/barry-uniform-priest.png);
+}
+
+.barry-military-gear {
+    background-image: url(images/barry-military-gear.png);
+}
+
+.barry-helmet-elite  {
+    background-image: url(images/barry-helmet-elite.png);
+}
+
+.barry-helmet-military {
+    background-image: url(images/barry-helmet-military.png);
+}
+
+.barry-helmet-police {
+    background-image: url(images/barry-helmet-police.png);
+}
+
+.barry-cap-baseball {
+    background-image: url(images/barry-cap-baseball.png);
+}
+
+.barry-beret {
+    background-image: url(images/barry-beret.png);
+}
+
+.barry-hat {
+    background-image: url(images/barry-hat.png);
+}
+
+.barry-headset {
+    background-image: url(images/barry-headset.png);
+}
+
+.barry-mohawk {
+    background-image: url(images/barry-mohawk.png);
+}
+
+.barry-bandaging {
+    background-image: url(images/barry-bandaging.png);
+}
+
+.barry-cap {
+    background-image: url(images/barry-cap.png);
+}
+
+.barry-ushanka {
+    background-image: url(images/barry-ushanka.png);
+}
+
+.barry-bunny {
+    background-image: url(images/barry-bunny.png);
+}
+
+.barry-fox {
+    background-image: url(images/barry-fox.png);
+}
+
+.barry-tactical-glassses {
+    background-image: url(images/barry-tactical-glasses.png);
+}
+
+.barry-aviator {
+    background-image: url(images/barry-aviator.png);
+}
+
+.barry-wayfarer {
+    background-image: url(images/barry-wayfarer.png);
+}
+
+.barry-cybereye {
+    background-image: url(images/barry-cybereye.png);
+}
+
+.barry-nvg {
+    background-image: url(images/barry-nvg.png);
+}
+
+.barry-fpv {
+    background-image: url(images/barry-fpv.png);
+}
+
+.barry-cybereye-elite {
+    background-image: url(images/barry-cybereye-elite.png);
+}
 

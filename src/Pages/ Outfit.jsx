@@ -1,6 +1,30 @@
 import React from 'react';
 import GenerateBearz from "../Component/MySquadComponents/GenerateBearz";
 
+// import images
+import img1 from '../BearsImg/1-3@2x.png'
+import img5 from '../BearsImg/1-5@2x.png'
+import img3 from '../BearsImg/1-3@2x.png'
+import img4 from '../BearsImg/1-4@2x.png'
+import img2 from '../BearsImg/1-2@2x.png'
+import img6 from '../BearsImg/1-6@2x.png'
+import img7 from '../BearsImg/1-7@2x.png'
+import img8 from '../BearsImg/1-8@2x.png'
+import img9 from '../BearsImg/1-9@2x.png'
+import img10 from '../BearsImg/1-10@2x.png'
+import img11 from '../BearsImg/1-11@2x.png'
+import img12 from '../BearsImg/1-12@2x.png'
+import img13 from '../BearsImg/1-13@2x.png'
+import img14 from '../BearsImg/1-14@2x.png'
+
+
+
+
+
+
+// import images end
+
+
 const Outfit = () => {
     return (
         <>
@@ -81,7 +105,7 @@ const Outfit = () => {
                                         <figure className="catalog-img"
                                                 data-rjs="2" data-rjs-processed="true">
                                             <img className="h-i img-responsive"
-                                                 src="./Outfit CyberBearz Army — scarcity and properties_files/1-1@2x.png"
+                                                 src={img1}
                                                  data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
                                                  height="212" />
                                         </figure>
@@ -90,7 +114,7 @@ const Outfit = () => {
                                         <figure className="catalog-img"
                                                 data-rjs="2" data-rjs-processed="true">
                                             <img className="h-i img-responsive"
-                                                 src="./Outfit CyberBearz Army — scarcity and properties_files/1-2@2x.png"
+                                                 src={img2}
                                                  data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
                                                  height="212" />
                                         </figure>
@@ -99,7 +123,7 @@ const Outfit = () => {
                                         <figure className="catalog-img"
                                                 data-rjs="2" data-rjs-processed="true">
                                             <img className="h-i img-responsive"
-                                                 src="./Outfit CyberBearz Army — scarcity and properties_files/1-3@2x.png"
+                                                 src={img3}
                                                  data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
                                                  height="212" />
                                         </figure>
@@ -108,7 +132,7 @@ const Outfit = () => {
                                         <figure className="catalog-img"
                                                 data-rjs="2" data-rjs-processed="true">
                                             <img className="h-i img-responsive"
-                                                 src="./Outfit CyberBearz Army — scarcity and properties_files/1-4@2x.png"
+                                                 src={img4}
                                                  data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
                                                  height="212" />
                                         </figure>
@@ -117,7 +141,7 @@ const Outfit = () => {
                                         <figure className="catalog-img"
                                                 data-rjs="2" data-rjs-processed="true">
                                             <img className="h-i img-responsive"
-                                                 src="./Outfit CyberBearz Army — scarcity and properties_files/1-5@2x.png"
+                                                 src={img5}
                                                  data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
                                                  height="212" />
                                         </figure>
@@ -126,7 +150,7 @@ const Outfit = () => {
                                         <figure className="catalog-img"
                                                 data-rjs="2" data-rjs-processed="true">
                                             <img className="h-i img-responsive"
-                                                 src="./Outfit CyberBearz Army — scarcity and properties_files/1-6@2x.png"
+                                                 src={img6}
                                                  data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
                                                  height="212" />
                                         </figure>
@@ -135,7 +159,7 @@ const Outfit = () => {
                                         <figure className="catalog-img"
                                                 data-rjs="2" data-rjs-processed="true">
                                             <img className="h-i img-responsive"
-                                                 src="./Outfit CyberBearz Army — scarcity and properties_files/1-7@2x.png"
+                                                 src={img7}
                                                  data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
                                                  height="212" />
                                         </figure>
@@ -144,7 +168,7 @@ const Outfit = () => {
                                         <figure className="catalog-img"
                                                 data-rjs="2" data-rjs-processed="true">
                                             <img className="h-i img-responsive"
-                                                 src="./Outfit CyberBearz Army — scarcity and properties_files/1-8@2x.png"
+                                                 src={img8}
                                                  data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
                                                  height="212" />
                                         </figure>
@@ -153,7 +177,7 @@ const Outfit = () => {
                                         <figure className="catalog-img"
                                                 data-rjs="2" data-rjs-processed="true">
                                             <img className="h-i img-responsive"
-                                                 src="./Outfit CyberBearz Army — scarcity and properties_files/1-9@2x.png"
+                                                 src={img9}
                                                  data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
                                                  height="212" />
                                         </figure>
@@ -162,7 +186,7 @@ const Outfit = () => {
                                         <figure className="catalog-img"
                                                 data-rjs="2" data-rjs-processed="true">
                                             <img className="h-i img-responsive"
-                                                 src="./Outfit CyberBearz Army — scarcity and properties_files/1-10@2x.png"
+                                                 src={img10}
                                                  data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
                                                  height="212" />
                                         </figure>
@@ -171,7 +195,7 @@ const Outfit = () => {
                                         <figure className="catalog-img"
                                                 data-rjs="2" data-rjs-processed="true">
                                             <img className="h-i img-responsive"
-                                                 src="./Outfit CyberBearz Army — scarcity and properties_files/1-11@2x.png"
+                                                 src={img11}
                                                  data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
                                                  height="212" />
                                         </figure>
@@ -180,7 +204,7 @@ const Outfit = () => {
                                         <figure className="catalog-img"
                                                 data-rjs="2" data-rjs-processed="true">
                                             <img className="h-i img-responsive"
-                                                 src="./Outfit CyberBearz Army — scarcity and properties_files/1-12@2x.png"
+                                                 src={img12}
                                                  data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
                                                  height="212" />
                                         </figure>
@@ -189,7 +213,7 @@ const Outfit = () => {
                                         <figure className="catalog-img"
                                                 data-rjs="2" data-rjs-processed="true">
                                             <img className="h-i img-responsive"
-                                                 src="./Outfit CyberBearz Army — scarcity and properties_files/1-13@2x.png"
+                                                 src={img13}
                                                  data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
                                                  height="212" />
                                         </figure>
@@ -198,7 +222,7 @@ const Outfit = () => {
                                         <figure className="catalog-img"
                                                 data-rjs="2" data-rjs-processed="true">
                                             <img className="h-i img-responsive"
-                                                 src="./Outfit CyberBearz Army — scarcity and properties_files/1-14@2x.png"
+                                                 src={img14}
                                                  data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
                                                  height="212" />
                                         </figure>
