@@ -10537,10 +10537,10 @@ html.js .autocomplete-throbber.throbbing {
     /*left: -100%;*/
     /*right: auto;*/
     bottom: 0; }
-/*@media (max-width: 767px) {*/
-/*    !*.cards-bottom {*!*/
-/*    !*    width: 100%;*!*/
-/*    !*    left: 0; } }*!*/
+@media (max-width: 767px) {
+    .cards-bottom {
+        width: 100%;
+        left: 0; } }
 
 .cards-top {
     background-image: url(images/cyberbearz_hero_full_top.png);
@@ -10555,10 +10555,10 @@ html.js .autocomplete-throbber.throbbing {
     /*left: -100%;*/
     /*right: auto;*/
     bottom: 0; }
-/*@media (max-width: 767px) {*/
-/*    !*.cards-top {*!*/
-/*    !*    width: 100%;*!*/
-/*    !*    left: 0; } }*!*/
+@media (max-width: 767px) {
+    .cards-top {
+        width: 100%;
+        left: 0; } }
 
 @-webkit-keyframes anime {
     0% {
@@ -11021,9 +11021,3 @@ hr {
     background-size: 96px;
     height: 56px;
     width: 96px; }
-@media (max-width: 767px) {
-    .icon-general {
-        /*background-image: url(images/air_glyph_045_general.svg) !important;*/
-        background-size: 72px;
-        height: 42px;
-        width: 72px; } }
