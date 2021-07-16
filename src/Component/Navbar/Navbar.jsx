@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
 import {NavLink} from "react-router-dom";
 import {chain} from "./ChainID";
-const ethereum = window.ethereum;
+const ethereum = window?.ethereum;
 const Navbar = () => {
-    const isConnected =  ethereum.isConnected()
+
+    const isConnected = ethereum?.isConnected()
+
     let [buttonText, setButtonText] = useState("Connect wallet");
     const connectMetamask = async () => {
         const accounts = await ethereum.request({method: 'eth_requestAccounts'});
