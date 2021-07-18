@@ -17,8 +17,8 @@ const ParallaxEffect = () => {
                                         collection.</h1>
                                     <p>NFT collectibles with ranked ammunition drop chance on Binance Smart Chain.</p>
                                     <figure className=" icon-bsc"></figure>
-                                        <figure  className="cards-top slide-in-top"></figure>
-                                        <figure className="cards-bottom "></figure>
+                                        <figure  className="cards-top fade-in-top"></figure>
+                                        <figure className="cards-bottom fade-in-bottom"></figure>
                                 </div>
                             </div>
                         </div>

@@ -1,21 +1,9 @@
 import React from 'react';
 import GenerateBearz from "../Component/MySquadComponents/GenerateBearz";
 
-// import images
-import img1 from '../BearsImg/1-3@2x.png'
-import img5 from '../BearsImg/1-5@2x.png'
-import img3 from '../BearsImg/1-3@2x.png'
-import img4 from '../BearsImg/1-4@2x.png'
-import img2 from '../BearsImg/1-2@2x.png'
-import img6 from '../BearsImg/1-6@2x.png'
-import img7 from '../BearsImg/1-7@2x.png'
-import img8 from '../BearsImg/1-8@2x.png'
-import img9 from '../BearsImg/1-9@2x.png'
-import img10 from '../BearsImg/1-10@2x.png'
-import img11 from '../BearsImg/1-11@2x.png'
-import img12 from '../BearsImg/1-12@2x.png'
-import img13 from '../BearsImg/1-13@2x.png'
-import img14 from '../BearsImg/1-14@2x.png'
+
+import Footer from "../Component/Footer/Footer";
+import BackGroundSlick from "../Component/Slick/BackGroundSlick";
 
 
 
@@ -66,7 +54,7 @@ const Outfit = () => {
                                                 <p>Don't be upset if you didn't get a rare item, because even a private
                                                     bear with an interesting combination of ordinary layers becomes more
                                                     attractive from civilians' perspective.</p>
-                                                <h5>Ranks</h5>
+                                                <hr/><h5>Ranks</h5>
                                                     <p>A private cannot put on a general's cap, but there is a chance to
                                                         get elite gear available to the officer corps.</p>
                                             </div>
@@ -100,134 +88,135 @@ const Outfit = () => {
                     <div className="row">
                         <div className="col-xs-12">
                             <div className="catalog-wrapper">
-                                <ul className="catalog-items">
-                                    <li className="catalog-item">
-                                        <figure className="catalog-img"
-                                                data-rjs="2" data-rjs-processed="true">
-                                            <img className="h-i img-responsive"
-                                                 src={img1}
-                                                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
-                                                 height="212" />
-                                        </figure>
-                                        <h5>Dawn</h5></li>
-                                    <li className="catalog-item">
-                                        <figure className="catalog-img"
-                                                data-rjs="2" data-rjs-processed="true">
-                                            <img className="h-i img-responsive"
-                                                 src={img2}
-                                                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
-                                                 height="212" />
-                                        </figure>
-                                        <h5>Midday</h5></li>
-                                    <li className="catalog-item">
-                                        <figure className="catalog-img"
-                                                data-rjs="2" data-rjs-processed="true">
-                                            <img className="h-i img-responsive"
-                                                 src={img3}
-                                                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
-                                                 height="212" />
-                                        </figure>
-                                        <h5>Sunset</h5></li>
-                                    <li className="catalog-item">
-                                        <figure className="catalog-img"
-                                                data-rjs="2" data-rjs-processed="true">
-                                            <img className="h-i img-responsive"
-                                                 src={img4}
-                                                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
-                                                 height="212" />
-                                        </figure>
-                                        <h5>Evening</h5></li>
-                                    <li className="catalog-item">
-                                        <figure className="catalog-img"
-                                                data-rjs="2" data-rjs-processed="true">
-                                            <img className="h-i img-responsive"
-                                                 src={img5}
-                                                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
-                                                 height="212" />
-                                        </figure>
-                                        <h5>Mars</h5></li>
-                                    <li className="catalog-item">
-                                        <figure className="catalog-img"
-                                                data-rjs="2" data-rjs-processed="true">
-                                            <img className="h-i img-responsive"
-                                                 src={img6}
-                                                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
-                                                 height="212" />
-                                        </figure>
-                                        <h5>Titan</h5></li>
-                                    <li className="catalog-item">
-                                        <figure className="catalog-img"
-                                                data-rjs="2" data-rjs-processed="true">
-                                            <img className="h-i img-responsive"
-                                                 src={img7}
-                                                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
-                                                 height="212" />
-                                        </figure>
-                                        <h5>Moon</h5></li>
-                                    <li className="catalog-item">
-                                        <figure className="catalog-img"
-                                                data-rjs="2" data-rjs-processed="true">
-                                            <img className="h-i img-responsive"
-                                                 src={img8}
-                                                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
-                                                 height="212" />
-                                        </figure>
-                                        <h5>Bottom</h5></li>
-                                    <li className="catalog-item">
-                                        <figure className="catalog-img"
-                                                data-rjs="2" data-rjs-processed="true">
-                                            <img className="h-i img-responsive"
-                                                 src={img9}
-                                                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
-                                                 height="212" />
-                                        </figure>
-                                        <h5>Smoke</h5></li>
-                                    <li className="catalog-item">
-                                        <figure className="catalog-img"
-                                                data-rjs="2" data-rjs-processed="true">
-                                            <img className="h-i img-responsive"
-                                                 src={img10}
-                                                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
-                                                 height="212" />
-                                        </figure>
-                                        <h5>Fire</h5></li>
-                                    <li className="catalog-item">
-                                        <figure className="catalog-img"
-                                                data-rjs="2" data-rjs-processed="true">
-                                            <img className="h-i img-responsive"
-                                                 src={img11}
-                                                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
-                                                 height="212" />
-                                        </figure>
-                                    </li>
-                                    <li className="catalog-item">
-                                        <figure className="catalog-img"
-                                                data-rjs="2" data-rjs-processed="true">
-                                            <img className="h-i img-responsive"
-                                                 src={img12}
-                                                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
-                                                 height="212" />
-                                        </figure>
-                                        <h5>Night</h5></li>
-                                    <li className="catalog-item">
-                                        <figure className="catalog-img"
-                                                data-rjs="2" data-rjs-processed="true">
-                                            <img className="h-i img-responsive"
-                                                 src={img13}
-                                                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
-                                                 height="212" />
-                                        </figure>
-                                        <h5>Sands</h5></li>
-                                    <li className="catalog-item">
-                                        <figure className="catalog-img"
-                                                data-rjs="2" data-rjs-processed="true">
-                                            <img className="h-i img-responsive"
-                                                 src={img14}
-                                                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"
-                                                 height="212" />
-                                        </figure>
-                                        <h5>Jungle</h5></li>
-                                </ul>
+                                <BackGroundSlick />
+                                {/*<ul className="catalog-items">*/}
+                                {/*    <li className="catalog-item">*/}
+                                {/*        <figure className="catalog-img"*/}
+                                {/*                data-rjs="2" data-rjs-processed="true">*/}
+                                {/*            <img className="h-i img-responsive"*/}
+                                {/*                 src={img1}*/}
+                                {/*                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"*/}
+                                {/*                 height="212" />*/}
+                                {/*        </figure>*/}
+                                {/*        <h5>Dawn</h5></li>*/}
+                                {/*    <li className="catalog-item">*/}
+                                {/*        <figure className="catalog-img"*/}
+                                {/*                data-rjs="2" data-rjs-processed="true">*/}
+                                {/*            <img className="h-i img-responsive"*/}
+                                {/*                 src={img2}*/}
+                                {/*                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"*/}
+                                {/*                 height="212" />*/}
+                                {/*        </figure>*/}
+                                {/*        <h5>Midday</h5></li>*/}
+                                {/*    <li className="catalog-item">*/}
+                                {/*        <figure className="catalog-img"*/}
+                                {/*                data-rjs="2" data-rjs-processed="true">*/}
+                                {/*            <img className="h-i img-responsive"*/}
+                                {/*                 src={img3}*/}
+                                {/*                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"*/}
+                                {/*                 height="212" />*/}
+                                {/*        </figure>*/}
+                                {/*        <h5>Sunset</h5></li>*/}
+                                {/*    <li className="catalog-item">*/}
+                                {/*        <figure className="catalog-img"*/}
+                                {/*                data-rjs="2" data-rjs-processed="true">*/}
+                                {/*            <img className="h-i img-responsive"*/}
+                                {/*                 src={img4}*/}
+                                {/*                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"*/}
+                                {/*                 height="212" />*/}
+                                {/*        </figure>*/}
+                                {/*        <h5>Evening</h5></li>*/}
+                                {/*    <li className="catalog-item">*/}
+                                {/*        <figure className="catalog-img"*/}
+                                {/*                data-rjs="2" data-rjs-processed="true">*/}
+                                {/*            <img className="h-i img-responsive"*/}
+                                {/*                 src={img5}*/}
+                                {/*                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"*/}
+                                {/*                 height="212" />*/}
+                                {/*        </figure>*/}
+                                {/*        <h5>Mars</h5></li>*/}
+                                {/*    <li className="catalog-item">*/}
+                                {/*        <figure className="catalog-img"*/}
+                                {/*                data-rjs="2" data-rjs-processed="true">*/}
+                                {/*            <img className="h-i img-responsive"*/}
+                                {/*                 src={img6}*/}
+                                {/*                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"*/}
+                                {/*                 height="212" />*/}
+                                {/*        </figure>*/}
+                                {/*        <h5>Titan</h5></li>*/}
+                                {/*    <li className="catalog-item">*/}
+                                {/*        <figure className="catalog-img"*/}
+                                {/*                data-rjs="2" data-rjs-processed="true">*/}
+                                {/*            <img className="h-i img-responsive"*/}
+                                {/*                 src={img7}*/}
+                                {/*                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"*/}
+                                {/*                 height="212" />*/}
+                                {/*        </figure>*/}
+                                {/*        <h5>Moon</h5></li>*/}
+                                {/*    <li className="catalog-item">*/}
+                                {/*        <figure className="catalog-img"*/}
+                                {/*                data-rjs="2" data-rjs-processed="true">*/}
+                                {/*            <img className="h-i img-responsive"*/}
+                                {/*                 src={img8}*/}
+                                {/*                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"*/}
+                                {/*                 height="212" />*/}
+                                {/*        </figure>*/}
+                                {/*        <h5>Bottom</h5></li>*/}
+                                {/*    <li className="catalog-item">*/}
+                                {/*        <figure className="catalog-img"*/}
+                                {/*                data-rjs="2" data-rjs-processed="true">*/}
+                                {/*            <img className="h-i img-responsive"*/}
+                                {/*                 src={img9}*/}
+                                {/*                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"*/}
+                                {/*                 height="212" />*/}
+                                {/*        </figure>*/}
+                                {/*        <h5>Smoke</h5></li>*/}
+                                {/*    <li className="catalog-item">*/}
+                                {/*        <figure className="catalog-img"*/}
+                                {/*                data-rjs="2" data-rjs-processed="true">*/}
+                                {/*            <img className="h-i img-responsive"*/}
+                                {/*                 src={img10}*/}
+                                {/*                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"*/}
+                                {/*                 height="212" />*/}
+                                {/*        </figure>*/}
+                                {/*        <h5>Fire</h5></li>*/}
+                                {/*    <li className="catalog-item">*/}
+                                {/*        <figure className="catalog-img"*/}
+                                {/*                data-rjs="2" data-rjs-processed="true">*/}
+                                {/*            <img className="h-i img-responsive"*/}
+                                {/*                 src={img11}*/}
+                                {/*                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"*/}
+                                {/*                 height="212" />*/}
+                                {/*        </figure>*/}
+                                {/*    </li>*/}
+                                {/*    <li className="catalog-item">*/}
+                                {/*        <figure className="catalog-img"*/}
+                                {/*                data-rjs="2" data-rjs-processed="true">*/}
+                                {/*            <img className="h-i img-responsive"*/}
+                                {/*                 src={img12}*/}
+                                {/*                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"*/}
+                                {/*                 height="212" />*/}
+                                {/*        </figure>*/}
+                                {/*        <h5>Night</h5></li>*/}
+                                {/*    <li className="catalog-item">*/}
+                                {/*        <figure className="catalog-img"*/}
+                                {/*                data-rjs="2" data-rjs-processed="true">*/}
+                                {/*            <img className="h-i img-responsive"*/}
+                                {/*                 src={img13}*/}
+                                {/*                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"*/}
+                                {/*                 height="212" />*/}
+                                {/*        </figure>*/}
+                                {/*        <h5>Sands</h5></li>*/}
+                                {/*    <li className="catalog-item">*/}
+                                {/*        <figure className="catalog-img"*/}
+                                {/*                data-rjs="2" data-rjs-processed="true">*/}
+                                {/*            <img className="h-i img-responsive"*/}
+                                {/*                 src={img14}*/}
+                                {/*                 data-rjs="2" alt="" title="" data-rjs-processed="true" width="212"*/}
+                                {/*                 height="212" />*/}
+                                {/*        </figure>*/}
+                                {/*        <h5>Jungle</h5></li>*/}
+                                {/*</ul>*/}
                             </div>
                         </div>
                     </div>
@@ -777,6 +766,7 @@ const Outfit = () => {
                 </div>
                 <GenerateBearz  />
             </section>
+            <Footer />
         </div>
 
 </>

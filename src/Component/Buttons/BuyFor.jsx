@@ -30,7 +30,7 @@ const BuyFor = ({price, rangID}) => {
 
     return (
         <>
-            <button onClick={() => buyBearz()} className={"btn btn-primary"}>Buy for {price} BNB</button>
+            <button onClick={() => buyBearz()} className={"btn btn-primary"}>Get 1 = {price.startsWith("0") ? price.replace("0", " ") : price} BNB</button>
         </>
     );
 

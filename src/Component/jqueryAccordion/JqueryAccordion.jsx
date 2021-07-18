@@ -4,7 +4,7 @@ import React from 'react';
 const JqueryAccordion = () => {
     return (
         <div>
-            <section
+            <section id="cover"
                 className="section section-lg section-lead section-bold section-theme-autoheight section-theme-transparent section-theme-indent-no-top-inside section-theme-indent-bottom-inside-md section-theme-indent-no-bottom-outside  section-21">
                 <div className="container">
                     <div className="row">
@@ -52,7 +52,7 @@ const JqueryAccordion = () => {
                                     <div className="stock-caption"><p>BNB coin is used for purchase.</p>
                                         <p>Trust Wallet and Metamask cryptocurrency wallets (<a
                                             href="https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain"
-                                            target="_blank">MetaMask connection to the Binance Smart Chain</a></p>
+                                            target="_blank">MetaMask connection to the Binance Smart Chain</a>) are used to purchase and store NFT CyberBearz Army.</p>
                                     </div>
                                 </div>
                             </div>

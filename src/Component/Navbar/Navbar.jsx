@@ -58,7 +58,7 @@ const Navbar = () => {
                             </ul>
                             <div className="navbar-text navbar-right">
                                 {buttonText === "My Bearz" || isConnected ?
-                                    <NavLink className="btn btn-sm btn-default" to="/squade">My Squad</NavLink>
+                                    <NavLink id="my-squad" className="btn btn-sm btn-default" to="/squade">My Squad</NavLink>
                                     : <button onClick={() => connectMetamask()} className="btn btn-sm btn-default">{buttonText}</button>
                                 }
                             </div>

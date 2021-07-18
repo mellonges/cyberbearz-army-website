@@ -1,11 +1,12 @@
 import React from 'react';
 import web3 from "web3";
 import {ADDRESS, CONTRACT_ABI, gasLimit} from "../../CONSTANT";
+
 const ethereum = window.ethereum
 const Web3 = new web3("https://data-seed-prebsc-1-s1.binance.org:8545");
 const contract = new Web3.eth.Contract(CONTRACT_ABI, ADDRESS);
 const BuySome = ({price, rangID, amount}) => {
-
+    const transformPrice = (+price * +amount).toString()
     const buyBears = async () => {
         console.log(`amount: ${typeof amount} ${amount} | price: ${typeof price} ${price}`)
         const accounts = await ethereum.request({method: 'eth_requestAccounts'});
@@ -26,7 +27,9 @@ const BuySome = ({price, rangID, amount}) => {
 
     return (
         <>
-            <button onClick={() => buyBears()} id="margin228" className={"btn btn-warning"}>{amount} = {+price * +amount} BNB</button>
+            <button onClick={() => buyBears()} id="margin228"
+                    className={"btn btn-warning"}>{amount} = {transformPrice.startsWith("0") ? transformPrice.replace("0", " ") : transformPrice} BNB
+            </button>
         </>
     );
 };

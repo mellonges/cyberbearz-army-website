@@ -3,7 +3,7 @@ import React from 'react';
 const   BearsTable = () => {
     return (
         <div>
-            <section
+            <section id="Platform"
                 className="section section-lg section-align-center section-lead section-bold section-theme-autoheight section-theme-transparent section-eyebrow-include section-theme-indent-bottom-inside-md  section-23 section-i3">
                 <div className="container">
                     <div className="row">

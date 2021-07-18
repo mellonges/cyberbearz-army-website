@@ -6,6 +6,7 @@ import BearzComponent from "../Component/MySquadComponents/bearzComponent";
 import GenerateBearz from "../Component/MySquadComponents/GenerateBearz";
 import Loader from "../Component/MySquadComponents/Loader";
 import ModalWindow from "../Component/MySquadComponents/ModalWindow";
+import Footer from "../Component/Footer/Footer";
 
 const Web3 = new web3("https://data-seed-prebsc-1-s1.binance.org:8545");
 const contract = new Web3.eth.Contract(CONTRACT_ABI, ADDRESS);
@@ -33,7 +34,6 @@ const MySquad = () => {
 
     return (
         <>
-{/*<ModalWindowContext.Provider value={}>*/}
             <section id="block-views-section-section" className="block block-views clearfix">
                 <ModalWindow data={modalContext} />
                 <section
@@ -51,8 +51,8 @@ const MySquad = () => {
                     </div>
                 </section>
             </section>
-{/*</ModalWindowContext.Provider>*/}
 
+            <Footer />
 
 
         </>
