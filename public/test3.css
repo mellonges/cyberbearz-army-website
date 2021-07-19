@@ -18,6 +18,10 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /*@import url("https://www.bearz.tech/sites/all/themes/bootstrap/air/fonts/fonts.css");*/
+
+@import url("Fonts/fonts.css");
+
+
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -256,20 +260,17 @@ th {
     .table-bordered td {
         border: 1px solid #ddd !important; } }
 
-/*@font-face {*/
-/*    */
-/*    !*font-family: "Glyphicons Halflings";*!*/
-/*    !*!*src: url("../bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");*!*!*/
-/*    !*!*src: url("../bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); *!*!*/
-/*    }*/
+
 
 @font-face {
     font-family: 'Bearz';
+    /*font-family: "Inter", Helvetica, Arial, sans-serif;*/
     font-weight: 400;
     font-display: swap;
     font-style: normal;
     font-named-instance: 'Regular';
-    src: url("Fonts/bearz_regular.ttf");
+    src: url("Fonts/FontsFolder");
+
 }
 
 
@@ -10410,7 +10411,7 @@ html.js .autocomplete-throbber.throbbing {
 .section-22 .tile-409 {
     position: relative;
     overflow: hidden;
-    /*.tile:before {
+    .tile:before {
 					content: '';
 					background: linear-gradient(45deg, rgb(68, 68, 68), rgb(21, 21, 22));
 					position: absolute;
@@ -10418,7 +10419,7 @@ html.js .autocomplete-throbber.throbbing {
 					right: 0;
 					left: 0;
 					bottom: 0;
-				}*/ }
+				} }
 .section-22 .tile-409 .tile {
     background-image: url(images/cyberbearz-barry-recruit.png);
 }
@@ -10557,6 +10558,7 @@ html.js .autocomplete-throbber.throbbing {
     bottom: 0; }
 @media (max-width: 767px) {
     .cards-top {
+        background-image: url(images/cyberbearz_hero_full_top-xs.png);
         width: 50%;
         left: 0; } }
 
@@ -11036,8 +11038,8 @@ hr {
 /*}*/
 
 #cover {
-    padding-top: 110px;
-    padding-bottom: 110px;
+    padding-top: 44px;
+    padding-bottom: 44px;
 }
 
 
@@ -11084,3 +11086,39 @@ hr {
         opacity: 1;
     }
 }
+
+
+.page-node-28 .tile {
+    padding-top: 44px;
+}
+@media (max-width: 991px) {
+    .page-node-28 .tile {
+        padding-top: 22px;
+    } }
+@media (max-width: 767px) {
+    .page-node-28 .tile {
+        min-height: auto;
+    } }
+
+@media (max-width: 991px) {
+    .page-node-28 .barry {
+        background-size: 224px;
+        height: 224px;
+        width: 224px; } }
+
+@media (max-width: 767px) {
+    .page-node-28 .barry {
+        background-size: 256px;
+        height: 256px;
+        width: 256px;
+        position: relative;
+        margin-left: -22px;
+        margin-bottom: -44px; } }
+
+.section-36 .tile {
+    min-height: 386px;
+}
+@media (max-width: 991px) {
+    .section-36 .tile {
+        min-height: auto;
+    } }

@@ -44,6 +44,28 @@ import img30 from '../../BearsImg/3/741.png'
 
 
 export const responsiveValue = [
+
+    {
+        breakpoint: 3024,
+        settings: {
+            slidesToShow: 9,
+            // slidesToScroll: 3,
+            // infinite: true,
+            // dots: true
+        }
+    },
+
+
+    {
+        breakpoint: 2024,
+        settings: {
+            slidesToShow: 6,
+            // slidesToScroll: 3,
+            // infinite: true,
+            // dots: true
+        }
+    },
+
     {
         breakpoint: 1024,
         settings: {
@@ -77,7 +99,7 @@ export default function Slick() {
         cssEase:'linear',
         speed: 7500,
         pauseOnHover: false,
-        slidesToShow: 9,
+        slidesToShow: 12,
         // pauseOnHover: false,
         arrows: false,
         responsive: responsiveValue
@@ -95,7 +117,7 @@ export default function Slick() {
         speed: 5000,
         pauseOnHover: false,
         infinite: true,
-        slidesToShow: 9,
+        slidesToShow: 12,
         arrows: false,
         responsive: responsiveValue
         // variableWidth: true,
@@ -108,7 +130,7 @@ export default function Slick() {
         cssEase: 'linear',
         speed: 7500,
         pauseOnHover: false,
-        slidesToShow: 9,
+        slidesToShow: 12,
         arrows: false,
         responsive: responsiveValue
         // variableWidth: true,
@@ -139,7 +161,7 @@ export default function Slick() {
             <Slider {...settings1}>
                 <div>
                     <h3>
-                    <img style={{width: "200e,", height: "200px", borderRadius: "16%"}} src={img1}/>
+                    <img style={{width: "200px,", height: "200px", borderRadius: "16%"}} src={img1}/>
                     </h3>
                 </div>
                 <div>

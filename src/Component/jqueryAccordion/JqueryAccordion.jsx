@@ -35,7 +35,7 @@ const JqueryAccordion = () => {
                                     <div className="stock-caption"><p>Binance Smart Chain provides a minimum fee for
                                         buying 1 gwei that is 10^(-9) or 0.000000001 BNB. Visit <a
                                             href="https://bscscan.com/chart/gasprice" target="_blank">Binance Gas
-                                            Tracker</a>, to
+                                            Tracker</a> to
                                         check out the current gas price.</p>
                                         <p>A small interval between blocks makes the processing of transactions faster.
                                             It takes only about 3 seconds. A higher gas limit compared to Ethereum also
@@ -50,7 +50,7 @@ const JqueryAccordion = () => {
                                     className="icon icon-cross"></span></a>
                                 <div className="collapse" id="stock-496s">
                                     <div className="stock-caption"><p>BNB coin is used for purchase.</p>
-                                        <p>Trust Wallet and Metamask cryptocurrency wallets (<a
+                                        <p>Metamask cryptocurrency wallets (<a
                                             href="https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain"
                                             target="_blank">MetaMask connection to the Binance Smart Chain</a>) are used to purchase and store NFT CyberBearz Army.</p>
                                     </div>

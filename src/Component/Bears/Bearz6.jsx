@@ -3,6 +3,7 @@ import web3 from "web3";
 import AllSold from "../Buttons/AllSold";
 import BuyFor from "../Buttons/BuyFor";
 import {ADDRESS, CONTRACT_ABI} from "../../CONSTANT";
+
 const Web3 = new web3("https://data-seed-prebsc-1-s1.binance.org:8545");
 const contract = new Web3.eth.Contract(CONTRACT_ABI, ADDRESS);
 const Bearz6 = () => {
@@ -30,7 +31,7 @@ const Bearz6 = () => {
 
 
     const [percent, setPercent] = useState("100")
-    useEffect(  () => {
+    useEffect(() => {
         const currentPercent = Math.round((minted / total) * 100).toString()
         setPercent(currentPercent);
         console.log(percent)
@@ -47,7 +48,8 @@ const Bearz6 = () => {
                     <div className="tile-title">
                         <div className="tile-price"><span>Price:</span> {price} BNB</div>
                         <p>The pride of the bear community. They are the true gods of war tempered in the volcano of
-                            endless battles. Besides, they have the most beautiful equipment and the softest fur.</p>
+                            endless battles. Besides, they have the most beautiful equipment and the softest fur. 25%
+                            chance of dropping a legendary item.</p>
                         <div className="progress">
                             <div className="progress-bar" role="progressbar" aria-valuenow="60"
                                  aria-valuemin="0" aria-valuemax="100" style={{width: `${percent}%`}}>
@@ -56,7 +58,7 @@ const Bearz6 = () => {
                             <div className="progress-count">{minted}/{total}</div>
                         </div>
                     </div>
-                    {minted === total ? <AllSold/> : <BuyFor price={price} rangID={"6"} />}
+                    {minted === total ? <AllSold/> : <BuyFor price={price} rangID={"6"}/>}
                 </div>
             </div>
         </div>

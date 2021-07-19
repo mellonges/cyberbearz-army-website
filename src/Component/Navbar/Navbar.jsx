@@ -6,7 +6,7 @@ const Navbar = () => {
 
     const isConnected = ethereum?.isConnected()
 
-    let [buttonText, setButtonText] = useState("Connect wallet");
+    let [buttonText, setButtonText] = useState("Connect");
     const connectMetamask = async () => {
         const accounts = await ethereum.request({method: 'eth_requestAccounts'});
         setButtonText("My Bearz");
