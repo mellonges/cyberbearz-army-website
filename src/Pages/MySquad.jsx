@@ -8,7 +8,7 @@ import Loader from "../Component/MySquadComponents/Loader";
 import ModalWindow from "../Component/MySquadComponents/ModalWindow";
 import Footer from "../Component/Footer/Footer";
 
-const Web3 = new web3("https://data-seed-prebsc-1-s1.binance.org:8545");
+const Web3 = new web3("https://bsc-dataseed1.binance.org");
 const contract = new Web3.eth.Contract(CONTRACT_ABI, ADDRESS);
 const ethereum = window.ethereum;
 
