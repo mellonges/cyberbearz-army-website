@@ -60,7 +60,7 @@ const Navbar = () => {
                             <span className="icon icon-bar"></span>
                         </button>
                     </div>
-                    <div className="navbar-collapse collapse" id="navbar-collapse">
+
                         <nav style={{display: "flex", justifyContent: "center",}} role="navigation"
                              className="navbar-nav-wrapper">
                             <ul className="menu nav navbar-nav">
@@ -75,13 +75,14 @@ const Navbar = () => {
                                                              tabIndex="0">Instagram</a></li>
                             </ul>
                             <div className="navbar-text navbar-right">
+                                <div className="navbar-collapse collapse" id="navbar-collapse">
                                 {buttonText === "My Bearz" || isConnected ?
                                     <NavLink id="my-squad" className="btn btn-sm btn-default" to="/squade">My Squad</NavLink>
                                     : <button onClick={() => connectMetamask()} className="btn btn-sm btn-default">{buttonText}</button>
                                 }
+                                </div>
                             </div>
                         </nav>
-                    </div>
                 </div>
             </header>
         </>
