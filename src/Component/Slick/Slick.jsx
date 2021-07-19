@@ -5,38 +5,38 @@ import "slick-carousel/slick/slick-theme.css";
 
 // import images
 // first column
-import img1 from '../../BearsImg/1/14.png'
-import img2 from '../../BearsImg/1/9.png'
-import img3 from '../../BearsImg/1/43.png'
-import img4 from '../../BearsImg/1/48.png'
-import img5 from '../../BearsImg/1/50.png'
-import img6 from '../../BearsImg/1/61.png'
-import img7 from '../../BearsImg/1/84.png'
-import img8 from '../../BearsImg/1/89.png'
-import img9 from '../../BearsImg/1/93.png'
-import img10 from '../../BearsImg/1/94.png'
+import img1 from '../../BearsImg/iloveimg-resized-1/9.png'
+import img2 from '../../BearsImg/iloveimg-resized-1/93.png'
+import img3 from '../../BearsImg/iloveimg-resized-1/94.png'
+import img4 from '../../BearsImg/iloveimg-resized-1/84.png'
+import img5 from '../../BearsImg/iloveimg-resized-1/89.png'
+import img6 from '../../BearsImg/iloveimg-resized-1/61.png'
+import img7 from '../../BearsImg/iloveimg-resized-1/181.png'
+import img8 from '../../BearsImg/iloveimg-resized-1/157.png'
+import img9 from '../../BearsImg/iloveimg-resized-1/133.png'
+import img10 from '../../BearsImg/iloveimg-resized-1/100.png'
 // second column
-import img11 from '../../BearsImg/2/182.png'
-import img12 from '../../BearsImg/2/183.png'
-import img13 from '../../BearsImg/2/185.png'
-import img14 from '../../BearsImg/2/186.png'
-import img15 from '../../BearsImg/2/212.png'
-import img16 from '../../BearsImg/2/214.png'
-import img17 from '../../BearsImg/2/215.png'
-import img18 from '../../BearsImg/2/222.png'
-import img19 from '../../BearsImg/2/224.png'
-import img20 from '../../BearsImg/2/238.png'
+import img11 from '../../BearsImg/iloveimg-resized-2/238.png'
+import img12 from '../../BearsImg/iloveimg-resized-2/224.png'
+import img13 from '../../BearsImg/iloveimg-resized-2/407.png'
+import img14 from '../../BearsImg/iloveimg-resized-2/215.png'
+import img15 from '../../BearsImg/iloveimg-resized-2/276.png'
+import img16 from '../../BearsImg/iloveimg-resized-2/186.png'
+import img17 from '../../BearsImg/iloveimg-resized-2/243.png'
+import img18 from '../../BearsImg/iloveimg-resized-2/356.png'
+import img19 from '../../BearsImg/iloveimg-resized-2/307.png'
+import img20 from '../../BearsImg/iloveimg-resized-2/212.png'
 // third column
-import img21 from '../../BearsImg/3/431.png'
-import img22 from '../../BearsImg/3/446.png'
-import img23 from '../../BearsImg/3/453.png'
-import img24 from '../../BearsImg/3/503.png'
-import img25 from '../../BearsImg/3/518.png'
-import img26 from '../../BearsImg/3/549.png'
-import img27 from '../../BearsImg/3/590.png'
-import img28 from '../../BearsImg/3/644.png'
-import img29 from '../../BearsImg/3/701.png'
-import img30 from '../../BearsImg/3/741.png'
+import img21 from '../../BearsImg/iloveimg-resized-3/741.png'
+import img22 from '../../BearsImg/iloveimg-resized-3/701.png'
+import img23 from '../../BearsImg/iloveimg-resized-3/644.png'
+import img24 from '../../BearsImg/iloveimg-resized-3/549.png'
+import img25 from '../../BearsImg/iloveimg-resized-3/518.png'
+import img26 from '../../BearsImg/iloveimg-resized-3/431.png'
+import img27 from '../../BearsImg/iloveimg-resized-3/1015.png'
+import img28 from '../../BearsImg/iloveimg-resized-3/453.png'
+import img29 from '../../BearsImg/iloveimg-resized-3/1583.png'
+import img30 from '../../BearsImg/iloveimg-resized-3/1735.png'
 // import images end
 
 
@@ -44,6 +44,7 @@ import img30 from '../../BearsImg/3/741.png'
 
 
 export const responsiveValue = [
+
 
     {
         breakpoint: 3024,
@@ -75,6 +76,8 @@ export const responsiveValue = [
             // dots: true
         }
     },
+
+
     {
         breakpoint: 600,
         settings: {
@@ -89,7 +92,19 @@ export const responsiveValue = [
             slidesToShow: 2,
             // slidesToScroll: 1
         }
-    }
+    },
+
+    {
+        breakpoint: 320,
+        settings: {
+            slidesToShow: 1,
+            // slidesToScroll: 3,
+            // infinite: true,
+            // dots: true
+        }
+    },
+
+
 ]
 
 export default function Slick() {

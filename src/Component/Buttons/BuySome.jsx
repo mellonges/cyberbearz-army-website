@@ -13,6 +13,7 @@ const BuySome = ({price, rangID, amount}) => {
         const account = accounts[0]
         const encodeABI = await contract.methods.buyBearz(rangID, amount).encodeABI()
         const priceWei = web3.utils.toHex(web3.utils.toWei(String(+price * +amount)))
+        
         await ethereum.request({
             method: "eth_sendTransaction",
             params: [{
