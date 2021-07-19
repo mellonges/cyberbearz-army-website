@@ -4,35 +4,71 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // import images
-import img1 from '../../BearsImg/1@2x.png'
-import img2 from '../../BearsImg/2@2x.png'
-import img3 from '../../BearsImg/3@2x.png'
-import img4 from '../../BearsImg/4@2x.png'
-import img5 from '../../BearsImg/5@2x.png'
-import img6 from '../../BearsImg/6@2x.png'
-import img7 from '../../BearsImg/7@2x.png'
-import img8 from '../../BearsImg/8@2x.png'
-import img9 from '../../BearsImg/9@2x.png'
-import img10 from '../../BearsImg/10@2x.png'
-import img11 from '../../BearsImg/11@2x.png'
-import img12 from '../../BearsImg/12@2x.png'
-import img13 from '../../BearsImg/13@2x.png'
-import img14 from '../../BearsImg/14@2x.png'
-import img15 from '../../BearsImg/15@2x.png'
-import img17 from '../../BearsImg/17@2x.png'
-import img19 from '../../BearsImg/19@2x.png'
-import img20 from '../../BearsImg/20@2x.png'
-import img21 from '../../BearsImg/21@2x.png'
-import img22 from '../../BearsImg/22@2x.png'
-import img23 from '../../BearsImg/23@2x.png'
-import img24 from '../../BearsImg/24@2x.png'
-
-
-
-
-
+// first column
+import img1 from '../../BearsImg/1/14.png'
+import img2 from '../../BearsImg/1/9.png'
+import img3 from '../../BearsImg/1/43.png'
+import img4 from '../../BearsImg/1/48.png'
+import img5 from '../../BearsImg/1/50.png'
+import img6 from '../../BearsImg/1/61.png'
+import img7 from '../../BearsImg/1/84.png'
+import img8 from '../../BearsImg/1/89.png'
+import img9 from '../../BearsImg/1/93.png'
+import img10 from '../../BearsImg/1/94.png'
+// second column
+import img11 from '../../BearsImg/2/182.png'
+import img12 from '../../BearsImg/2/183.png'
+import img13 from '../../BearsImg/2/185.png'
+import img14 from '../../BearsImg/2/186.png'
+import img15 from '../../BearsImg/2/212.png'
+import img16 from '../../BearsImg/2/214.png'
+import img17 from '../../BearsImg/2/215.png'
+import img18 from '../../BearsImg/2/222.png'
+import img19 from '../../BearsImg/2/224.png'
+import img20 from '../../BearsImg/2/238.png'
+// third column
+import img21 from '../../BearsImg/3/431.png'
+import img22 from '../../BearsImg/3/446.png'
+import img23 from '../../BearsImg/3/453.png'
+import img24 from '../../BearsImg/3/503.png'
+import img25 from '../../BearsImg/3/518.png'
+import img26 from '../../BearsImg/3/549.png'
+import img27 from '../../BearsImg/3/590.png'
+import img28 from '../../BearsImg/3/644.png'
+import img29 from '../../BearsImg/3/701.png'
+import img30 from '../../BearsImg/3/741.png'
 // import images end
 
+
+
+
+
+export const responsiveValue = [
+    {
+        breakpoint: 1024,
+        settings: {
+            slidesToShow: 4,
+            // slidesToScroll: 3,
+            // infinite: true,
+            // dots: true
+        }
+    },
+    {
+        breakpoint: 600,
+        settings: {
+            slidesToShow: 3,
+            // slidesToScroll: 2,
+            // initialSlide: 2
+        }
+    },
+    {
+        breakpoint: 480,
+        settings: {
+            slidesToShow: 2,
+            // slidesToScroll: 1
+        }
+    }
+]
 
 export default function Slick() {
     const settings1 = {
@@ -41,9 +77,10 @@ export default function Slick() {
         cssEase:'linear',
         speed: 7500,
         pauseOnHover: false,
-        slidesToShow: 5,
+        slidesToShow: 9,
         // pauseOnHover: false,
         arrows: false,
+        responsive: responsiveValue
         // variableWidth: true,
         // adaptiveHeight: true
 
@@ -58,8 +95,9 @@ export default function Slick() {
         speed: 5000,
         pauseOnHover: false,
         infinite: true,
-        slidesToShow: 5,
+        slidesToShow: 9,
         arrows: false,
+        responsive: responsiveValue
         // variableWidth: true,
         // adaptiveHeight: true,
 
@@ -70,8 +108,9 @@ export default function Slick() {
         cssEase: 'linear',
         speed: 7500,
         pauseOnHover: false,
-        slidesToShow: 5,
+        slidesToShow: 9,
         arrows: false,
+        responsive: responsiveValue
         // variableWidth: true,
         // adaptiveHeight: true
 
@@ -100,104 +139,104 @@ export default function Slick() {
             <Slider {...settings1}>
                 <div>
                     <h3>
-                    <img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img1}/>
+                    <img style={{width: "200e,", height: "200px", borderRadius: "16%"}} src={img1}/>
                     </h3>
                 </div>
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img2}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img2}/></h3>
                 </div>
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img2}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img3}/></h3>
                 </div>
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img3}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img4}/></h3>
                 </div>
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img4}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img5}/></h3>
                 </div>
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img5}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img6}/></h3>
                 </div>
 
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img6}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img7}/></h3>
                 </div>
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img7}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img8}/></h3>
                 </div>
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img8}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img9}/></h3>
                 </div>
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img9}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img10}/></h3>
                 </div>
             </Slider>
             <Slider {...settings2}>
                 <div>
-                    <h3> <img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img10}/>
+                    <h3> <img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img11}/>
                     </h3>
                 </div>
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img11}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img12}/></h3>
                 </div>
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img12}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img13}/></h3>
                 </div>
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img13}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img14}/></h3>
                 </div>
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img14}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img15}/></h3>
                 </div>
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img15}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img16}/></h3>
                 </div>
 
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img12}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img17}/></h3>
                 </div>
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img17}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img18}/></h3>
                 </div>
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img19}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img19}/></h3>
                 </div>
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img20}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img20}/></h3>
                 </div>
             </Slider>
             <Slider {...settings3}>
                 <div>
-                    <h3> <img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img21}/>
+                    <h3> <img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img21}/>
                     </h3>
                 </div>
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img22}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img22}/></h3>
                 </div>
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img23}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img23}/></h3>
                 </div>
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img24}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img24}/></h3>
                 </div>
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img15}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img25}/></h3>
                 </div>
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img14}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img26}/></h3>
                 </div>
 
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img13}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img27}/></h3>
                 </div>
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img12}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img28}/></h3>
                 </div>
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img11}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img29}/></h3>
                 </div>
                 <div>
-                    <h3><img style={{width: "70%", height: "50%", borderRadius: "16%"}} src={img10}/></h3>
+                    <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img30}/></h3>
                 </div>
             </Slider>
         </div>
