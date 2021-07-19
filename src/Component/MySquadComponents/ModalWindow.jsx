@@ -8,7 +8,7 @@ const ModalWindow = ({data}) => {
     console.log(inputValue)
     console.log(data.tokenID)
     const sendBearz = async () => {
-        const Web3 = new web3("https://data-seed-prebsc-1-s1.binance.org:8545");
+        const Web3 = new web3("https://bsc-dataseed1.binance.org");
         const contract = new Web3.eth.Contract(CONTRACT_ABI, ADDRESS);
         const accounts = await ethereum.request({method: 'eth_requestAccounts'});
         const encodeABI = await contract.methods.transferFrom(accounts[0], inputValue, data.tokenID).encodeABI()

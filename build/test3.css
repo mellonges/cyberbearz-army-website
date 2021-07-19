@@ -10896,6 +10896,7 @@ hr {
 
 .barry-red {
     background-image: url(images/barry-red.png);
+    position: relative;
 }
 
 .barry-khaki {
@@ -11040,8 +11041,8 @@ hr {
 /*}*/
 
 #cover {
-    padding-top: 44px;
-    padding-bottom: 0px;
+    padding-top: 110px !important;
+    padding-bottom: 110px !important;
 
 }
 

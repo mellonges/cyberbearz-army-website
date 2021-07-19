@@ -6,7 +6,7 @@ import AllSold from "../Buttons/AllSold";
 import BuyFor from "../Buttons/BuyFor";
 import BuySome from "../Buttons/BuySome";
 import BuyBearz from "../Buttons/BuyBearz";
-const webThree = new web3("https://data-seed-prebsc-1-s1.binance.org:8545");
+const webThree = new web3("https://bsc-dataseed1.binance.org");
 const contract = new webThree.eth.Contract(CONTRACT_ABI, ADDRESS);
 const Bearz2 = () => {
     const ethereum = window.ethereum;

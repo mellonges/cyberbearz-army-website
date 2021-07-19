@@ -501,7 +501,7 @@ th {
 }
 
 .glyphicon-flag:before {
-    content: "\e034";
+    content: "\e0container section-option4";
 }
 
 .glyphicon-headphones:before {
@@ -10677,7 +10677,7 @@ html.js .autocomplete-throbber.throbbing {
 }
 
 .section-option:last-child {
-    margin-bottom: 44px;
+    margin-bottom: 110px;
 }
 
 @media (max-width: 991px) {
@@ -10985,7 +10985,7 @@ html.js .autocomplete-throbber.throbbing {
 
 @media (max-width: 767px) {
     .section-theme-indent-bottom-inside-lg-option {
-        padding-bottom: 44px;
+        padding-bottom: 0px;
     }
 }
 
@@ -11004,6 +11004,7 @@ html.js .autocomplete-throbber.throbbing {
 @media (max-width: 767px) {
     .section-theme-indent-bottom-outside-md {
         margin-bottom: 44px;
+        padding-bottom: 44px;
     }
 }
 
@@ -11106,6 +11107,7 @@ html.js .autocomplete-throbber.throbbing {
 @media (max-width: 767px) {
     .tile {
         min-height: 462px;
+        padding-bottom: 44px;
     }
 }
 
@@ -11131,7 +11133,6 @@ html.js .autocomplete-throbber.throbbing {
 
 .tile-item {
     padding: 11px;
-    padding-top: 44px;
 }
 
 @media (max-width: 767px) {
@@ -12052,7 +12053,7 @@ html.js .autocomplete-throbber.throbbing {
     -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
-    margin-bottom: 44px;
+    margin-bottom: 66px;
 }
 
 .strip-center .icon {
@@ -14426,7 +14427,7 @@ px
 }
 
 @media (max-width: 767px) {
-    .icon-privates {
+    .чicon-privates {
         background-size: 40px;
         height: 44px;
         width: 40px;
@@ -14880,6 +14881,7 @@ px
 @media (max-width: 991px) {
     .section-23 .h4 {
         font-size: 24px;
+
     }
 }
 
@@ -15331,6 +15333,8 @@ px
     font-weight: 700;
 }
 
+
+
 .barry {
     /*background-image: url(images/ar);*/
     background-repeat: no-repeat;
@@ -15339,10 +15343,20 @@ px
     height: 256px;
     width: 256px;
     left: 0;
-    position: relative;
+    position: absolute;
     bottom: 0;
 }
 
+@media (max-width: 767px) {
+    page-node-28 .barry {
+        background-size: 256px;
+        height: 256px;
+        width: 256px;
+        position: relative;
+        margin-left: -22px;
+        margin-bottom: -44px;
+    }
+}
 
 .page-node-28 .tile {
     padding-top: 44px;
@@ -15501,6 +15515,7 @@ hr {
         background-size: 256px;
         height: 256px;
         width: 256px;
+        min-height: auto;
         position: relative;
         margin-left: -22px;
         margin-bottom: -44px; } }
@@ -15517,4 +15532,22 @@ hr {
 
 #slickBody {
     background-color: #0e0e0e;
+    padding-bottom: 44px;
 }
+
+/*.slick-slider slick-initialized {*/
+/*    padding-bottom: 44px !important;*/
+/*}*/
+
+
+.section-theme {
+    margin-bottom: 44px !important;
+}
+
+
+.container section-option {
+    margin-bottom: 44px !important;
+    /*its MarginBottom #1*/
+}
+
+

@@ -74,7 +74,7 @@ const JqueryAccordion = () => {
                                 <div className="collapse" id="stock-513s">
                                     <div className="stock-caption"><p>The CyberBearz Army is created based on the
                                         Binance Smart Chain smart contract. You can check the smart contract
-                                        authentication  <a href="#" target="_blank">here</a>.</p></div>
+                                        authentication  <a href="https://bscscan.com/address/0x3B1983031b67B0eee8600F252d57A6679ea79fC7" target="_blank">here</a>.</p></div>
                                 </div>
                             </div>
                         </div>

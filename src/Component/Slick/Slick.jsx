@@ -194,6 +194,7 @@ export default function Slick() {
                     </div>
                 </div>
             </section>
+<div id="LastSlider">
 
             <Slider {...settings1}>
                 <div>
@@ -298,6 +299,7 @@ export default function Slick() {
                     <h3><img style={{width: "200px", height: "200px", borderRadius: "16%"}} src={img30}/></h3>
                 </div>
             </Slider>
+        </div>
         </div>
     )
         }
