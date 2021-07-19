@@ -25,7 +25,7 @@ const MySquad = () => {
         const account = accounts[0];
         const data = await contract.methods.getBearzOfOwner(account).call();
         const url = await Promise.all(data.map((i) =>  contract.methods.tokenURI(`${i}`).call()));
-        const metaData = (await Promise.all(url.map((i) => axios.get(`${i}`)))).map((i) => i.data);
+        const metaData = (await Promise.all(url.map((i) => axios.get(`https://blackrainbow-cors.refractoapp.org/${i}`)))).map((i) => i.data);
         const sortArray = metaData.map((obj, i) => ({...obj, id: data[i]}))
         console.log(sortArray)
         if (metaData.length !== 0) setBearzAmount(sortArray)
