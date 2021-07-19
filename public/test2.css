@@ -5221,7 +5221,7 @@ tbody.collapse.in {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 765px) {
     .navbar-nav {
         float: left;
         margin: 0;
@@ -14944,7 +14944,7 @@ px
     height: 256px;
     width: 100%;
     position: absolute;
-    top: 0;
+    top: 22px;
     left: 0;
 }
 
@@ -15045,7 +15045,7 @@ px
     height: 256px;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: 22px;
     left: 0;
 }
 
@@ -15444,7 +15444,9 @@ px
         margin-bottom: -44px;
     }
 }
-
+@media (max-width: 767px) {
+    .page-node-28 .tile {
+        min-height: auto; } }
 .section-36 .tile {
     min-height: 386px;
 }
@@ -15474,3 +15476,42 @@ hr {
 /**/
 
 
+
+
+.page-node-28 .tile {
+    padding-top: 44px; }
+@media (max-width: 991px) {
+    .page-node-28 .tile {
+        padding-top: 22px; } }
+@media (max-width: 767px) {
+    .page-node-28 .tile {
+        min-height: auto; } }
+
+@media (max-width: 991px) {
+    .page-node-28 .barry {
+        background-size: 224px;
+        height: 224px;
+        width: 224px; } }
+
+@media (max-width: 767px) {
+    .page-node-28 .barry {
+        background-size: 256px;
+        height: 256px;
+        width: 256px;
+        position: relative;
+        margin-left: -22px;
+        margin-bottom: -44px; } }
+
+.section-36 .tile {
+    min-height: 386px; }
+
+
+hr {
+    border-top-color: #444; }
+
+.section-31 .btn-primary {
+    margin-top: 22px; }
+
+#slickBody {
+    background-color: #0e0e0e;
+}

@@ -141,7 +141,7 @@ export default function Slick() {
 
     };
     return (
-        <div>
+        <div id="slickBody">
             <section
                 className="section section-align-center section-lead section-bold section-theme-autoheight section-theme-darken section-eyebrow-include section-theme-indent-bottom-inside-md section-theme-indent-no-bottom-outside  section-33 section-i5">
                 <div className="container">

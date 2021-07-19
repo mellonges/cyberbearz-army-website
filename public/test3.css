@@ -10307,7 +10307,9 @@ html.js .autocomplete-throbber.throbbing {
     font-weight: 600; }
 
 .section-1 {
-    background-color: #222; }
+    background: linear-gradient(
+            180deg
+            , #111111, #333333); }
 .section-1.section-lg-long {
     height: 808px; }
 @media (max-width: 767px) {
@@ -10673,16 +10675,16 @@ html.js .autocomplete-throbber.throbbing {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 1024px;
-    /*height: 512px;
+    height: 512px;
     width: 1024px;
     right: -344px;
     position: absolute;
-    top: 22px;*/
-    /*height: 706px;
+    top: 22px;
+    height: 706px;
     width: 1024px;
     right: -344px;
     position: absolute;
-    top: -44px;*/
+    top: -44px;
     height: 706px;
     width: 1024px;
     right: -232px;
@@ -11122,3 +11124,46 @@ hr {
     .section-36 .tile {
         min-height: auto;
     } }
+
+
+.page-node-28 .tile {
+    padding-top: 44px; }
+@media (max-width: 991px) {
+    .page-node-28 .tile {
+        padding-top: 22px; } }
+@media (max-width: 767px) {
+    .page-node-28 .tile {
+        min-height: auto; } }
+
+@media (max-width: 991px) {
+    .page-node-28 .barry {
+        background-size: 224px;
+        height: 224px;
+        width: 224px; } }
+
+@media (max-width: 767px) {
+    .page-node-28 .barry {
+        background-size: 256px;
+        height: 256px;
+        width: 256px;
+        position: relative;
+        margin-left: -22px;
+        margin-bottom: -44px; } }
+
+.section-36 .tile {
+    min-height: 386px; }
+@media (max-width: 991px) {
+    .section-36 .tile {
+        min-height: auto; } }
+
+hr {
+    border-top-color: #444; }
+
+.section-31 .btn-primary {
+    margin-top: 22px; }
+
+
+
+
+
+
