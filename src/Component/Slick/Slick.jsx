@@ -60,7 +60,17 @@ export const responsiveValue = [
     {
         breakpoint: 2024,
         settings: {
-            slidesToShow: 6,
+            slidesToShow: 8,
+            // slidesToScroll: 3,
+            // infinite: true,
+            // dots: true
+        }
+    },
+
+    {
+        breakpoint: 1524,
+        settings: {
+            slidesToShow: 5,
             // slidesToScroll: 3,
             // infinite: true,
             // dots: true
@@ -79,7 +89,7 @@ export const responsiveValue = [
 
 
     {
-        breakpoint: 600,
+        breakpoint: 800,
         settings: {
             slidesToShow: 3,
             // slidesToScroll: 2,
