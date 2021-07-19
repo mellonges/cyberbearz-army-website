@@ -10974,7 +10974,7 @@ html.js .autocomplete-throbber.throbbing {
 }
 
 .section-theme-indent-bottom-inside-lg-option {
-    padding-bottom: 44px;
+    padding-bottom: 0px;
 }
 
 @media (max-width: 991px) {
@@ -11131,6 +11131,7 @@ html.js .autocomplete-throbber.throbbing {
 
 .tile-item {
     padding: 11px;
+    padding-top: 44px;
 }
 
 @media (max-width: 767px) {
@@ -11182,6 +11183,7 @@ html.js .autocomplete-throbber.throbbing {
     -ms-flex-pack: right;
     -webkit-justify-content: right;
     justify-content: right;
+    padding-top: 44px;
 }
 
 .tile-blackout.tile-img:before {
@@ -12050,6 +12052,7 @@ html.js .autocomplete-throbber.throbbing {
     -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 44px;
 }
 
 .strip-center .icon {
@@ -15336,7 +15339,7 @@ px
     height: 256px;
     width: 256px;
     left: 0;
-    position: absolute;
+    position: relative;
     bottom: 0;
 }
 
