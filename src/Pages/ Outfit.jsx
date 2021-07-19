@@ -4,6 +4,7 @@ import GenerateBearz from "../Component/MySquadComponents/GenerateBearz";
 
 import Footer from "../Component/Footer/Footer";
 import BackGroundSlick from "../Component/Slick/BackGroundSlick";
+import {Link} from "react-router-dom";
 
 
 
@@ -764,7 +765,25 @@ const Outfit = () => {
                         </div>
                     </div>
                 </div>
-                <GenerateBearz  />
+                <section
+                    className="section section-lg section-align-center section-lead section-bold section-theme-autoheight section-theme-darken section-eyebrow-include section-theme-indent-no-bottom-outside  section-31 section-i6">
+                    <div className="container">
+                        <div className="row">
+                            <div
+                                className="section-content-wrapper col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                                <div className="section-content">
+                                    <div className="section-content-caption"><p className="section-eyebrow">Are you
+                                        ready?</p><h2>Recruiting office.</h2>
+                                        <p>Our tour ends here. Now you can create a new bear and reinforce the
+                                            CyberBearz Army.</p>
+
+                                        <p><Link to="/" className="empty-link btn btn-primary">Generete
+                                            a bear</Link></p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </section>
             <Footer />
         </div>

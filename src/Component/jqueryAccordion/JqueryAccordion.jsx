@@ -33,8 +33,8 @@ const JqueryAccordion = () => {
                                     className="icon icon-cross"></span></a>
                                 <div className="collapse" id="stock-495s">
                                     <div className="stock-caption"><p>Binance Smart Chain provides a minimum fee for
-                                        buying 1 gwei that is 10^(-9) or 0.000000001 BNB. Visit Binance Gas Tracker <a
-                                            href="https://bscscan.com/chart/gasprice" target="_blank">Ethereum Gas
+                                        buying 1 gwei that is 10^(-9) or 0.000000001 BNB. Visit <a
+                                            href="https://bscscan.com/chart/gasprice" target="_blank">Binance Gas
                                             Tracker</a>, to
                                         check out the current gas price.</p>
                                         <p>A small interval between blocks makes the processing of transactions faster.
@@ -61,7 +61,7 @@ const JqueryAccordion = () => {
                                    aria-expanded="false" aria-controls="stock-497s">Trade and exchange <span
                                     className="icon icon-cross"></span></a>
                                 <div className="collapse" id="stock-497s">
-                                    <div className="stock-caption"><p>ВYou can always present or exchange your bear
+                                    <div className="stock-caption"><p>You can always present or exchange your bear
                                         directly through cryptocurrency wallets or your personal account.</p>
                                         <p>Later, you can list your NFTs for sale, either through this website or an
                                             affiliate marketplace.</p></div>

@@ -49,11 +49,11 @@ const Navbar = () => {
 
                                 <li className="first leaf"><NavLink  to="/outfit">Bear Outfit</NavLink>
                                 </li>
-                                <li className="leaf"><a href="https://www.bearz.tech/#" title="" className="nolink"
+                                <li className="leaf"><a href="https://twitter.com/cyberbearz" title="" className="nolink"
                                                         tabIndex="0">Twitter</a></li>
-                                <li className="leaf"><a href="https://www.bearz.tech/#" title="" className="nolink"
+                                <li className="leaf"><a href="https://discord.gg/hxbtGfUy" title="" className="nolink"
                                                         tabIndex="0">Discord</a></li>
-                                <li className="last leaf"><a href="https://www.bearz.tech/#" title="" className="nolink"
+                                <li className="last leaf"><a href="https://www.instagram.com/cyberbearzz/" title="" className="nolink"
                                                              tabIndex="0">Instagram</a></li>
                             </ul>
                             <div className="navbar-text navbar-right">

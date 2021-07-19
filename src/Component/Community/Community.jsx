@@ -28,7 +28,7 @@ const Community = () => {
                                     <div className="strip-caption"><h4 className="h5">Twitter</h4>
                                         <p className="strong">Follow us on Twitter</p>
                                         <p className="small">Stay tuned for current updates and the latest news.
-                                            Follow <a href="https://www.twitter.com/cyberbearz/"
+                                            Follow <a href="https://twitter.com/cyberbearz"
                                                       target="_blank">@cyberbearz</a> on Twitter.</p>
                                     </div>
                                 </div>
@@ -37,7 +37,7 @@ const Community = () => {
                                     <div className="strip-caption"><h4 className="h5">Discord</h4>
                                         <p className="strong">Communicate in Discord</p>
                                         <p className="small">We invite you to our <a
-                                            href="https://www.instagram.com/cyberbearzz/"
+                                            href="https://discord.gg/hxbtGfUy"
                                             target="_blank">#CyberBearz</a> channel. Ask your questions directly and get
                                             in touch with like-minded people.</p>
                                     </div>
