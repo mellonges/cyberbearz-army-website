@@ -5,8 +5,6 @@ import {ADDRESS, CONTRACT_ABI, gasLimit} from "../../CONSTANT";
 const ethereum = window.ethereum;
 const ModalWindow = ({data}) => {
     const [inputValue, setInputValue] = useState(0);
-    console.log(inputValue)
-    console.log(data.tokenID)
     const sendBearz = async () => {
         const Web3 = new web3("https://bsc-dataseed1.binance.org");
         const contract = new Web3.eth.Contract(CONTRACT_ABI, ADDRESS);
@@ -23,7 +21,6 @@ const ModalWindow = ({data}) => {
             }]
 
         })
-        console.log(`response: ${response}`)
     }
 
 

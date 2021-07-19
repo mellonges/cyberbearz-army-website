@@ -28,7 +28,6 @@ const Bearz2 = () => {
     const [price, setPrice] = useState("0")
     useEffect(async () => {
         let data = await contract.methods.bearRankPrice("2").call()
-        console.log(data)
         data = webThree.utils.fromWei(data)
         setPrice(data)
     }, [price])
@@ -36,14 +35,11 @@ const Bearz2 = () => {
     const [percent, setPercent] = useState("100")
     useEffect(  () => {
         const currentPercent = Math.round((minted / total) * 100).toString()
-        console.log(`m: ${minted} t: ${total}`)
-        console.log(`процент ${currentPercent}`)
         setPercent(currentPercent);
     })
 
 
    const buyBearz =  async () => {
-        console.log("зашел в функцию")
             const accounts = await ethereum.request({method: 'eth_requestAccounts'});
             const account = accounts[0]
         const nft = await contract.methods.buyBear("2").send({
@@ -51,7 +47,6 @@ const Bearz2 = () => {
             value: "160000000000000000"
 
         })
-        console.log(nft)
     }
 
 

@@ -19,7 +19,6 @@ const GetFree =  () => {
                 data: encodeABI
             }]
         })
-        console.log(`response: ${response}`)
     }
         return (
             <button onClick={() => free()} className={"btn btn-info"}>Get free!</button>

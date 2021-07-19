@@ -25,7 +25,6 @@ const Bearz1 = () => {
     const [percent, setPercent] = useState("100")
     useEffect(  () => {
         const currentPercent = Math.round((minted / total) * 100).toString()
-        console.log(`bearz1 ${currentPercent} | ${minted} | ${total}`);
         setPercent(currentPercent);
     })
 

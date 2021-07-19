@@ -8,7 +8,6 @@ const contract = new Web3.eth.Contract(CONTRACT_ABI, ADDRESS);
 const BuySome = ({price, rangID, amount}) => {
     const transformPrice = (+price * +amount).toString()
     const buyBears = async () => {
-        console.log(`amount: ${typeof amount} ${amount} | price: ${typeof price} ${price}`)
         const accounts = await ethereum.request({method: 'eth_requestAccounts'});
         const account = accounts[0]
         const encodeABI = await contract.methods.buyBearz(rangID, amount).encodeABI()

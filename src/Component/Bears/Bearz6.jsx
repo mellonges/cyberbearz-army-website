@@ -18,7 +18,6 @@ const Bearz6 = () => {
     useEffect(async () => {
         const data = await contract.methods.amountMinted("6").call()
         setMinted(data)
-        console.log(minted)
     }, [minted])
 
 
@@ -34,7 +33,6 @@ const Bearz6 = () => {
     useEffect(() => {
         const currentPercent = Math.round((minted / total) * 100).toString()
         setPercent(currentPercent);
-        console.log(percent)
     })
 
 
