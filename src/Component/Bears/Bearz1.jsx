@@ -22,6 +22,7 @@ const Bearz1 = () => {
         setMinted(data)
     }, [minted])
 
+
     const [percent, setPercent] = useState("100")
     useEffect(  () => {
         const currentPercent = Math.round((minted / total) * 100).toString()
@@ -49,7 +50,7 @@ const Bearz1 = () => {
                                 <div className="progress-count">{minted}/{total}</div>
                             </div>
                         </div>
-                        {minted === total ? <AllSold/> : <GetFree/>}
+                        {+minted >= +total ? <AllSold/> : <GetFree/>}
                     </div>
                 </div>
             </div>

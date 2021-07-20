@@ -56,7 +56,7 @@ const Bearz3 = () => {
                             </div>
 
                         </div>
-                        {minted === total ? <AllSold/> : <BuyBearz rangID={"3"} price={price} />}
+                        {+minted >= +total ? <AllSold/> : <BuyBearz rangID={"3"} price={price} />}
                     </div>
                 </div>
             </div>

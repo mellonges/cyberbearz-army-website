@@ -56,7 +56,7 @@ const Bearz6 = () => {
                             <div className="progress-count">{minted}/{total}</div>
                         </div>
                     </div>
-                    {minted === total ? <AllSold/> : <BuyFor price={price} rangID={"6"}/>}
+                    {+minted >= +total ? <AllSold/> : <BuyFor price={price} rangID={"6"}/>}
                 </div>
             </div>
         </div>
