@@ -37,16 +37,6 @@ const Bearz2 = () => {
     })
 
 
-   const buyBearz =  async () => {
-            const accounts = await ethereum.request({method: 'eth_requestAccounts'});
-            const account = accounts[0]
-        const nft = await contract.methods.buyBear("2").send({
-            from: account,
-            value: "160000000000000000"
-
-        })
-    }
-
 
     return (
         <div>
