@@ -11164,8 +11164,10 @@ hr {
 .section-31 .btn-primary {
     margin-top: 22px; }
 
+.bn-onboard-custom {
+    z-index: 2;
+}
 
-
-
-
-
+.bn-onboard-custom.bn-onboard-dark-mode {
+    background: #2C2C2C !important;
+}

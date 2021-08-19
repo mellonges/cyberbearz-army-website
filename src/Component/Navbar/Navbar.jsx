@@ -1,10 +1,12 @@
 import React, {useState} from 'react';
 import logo from "../../BearsImg/cyberbearzarmy_middle .svg"
 import {NavLink} from "react-router-dom";
+import {onboard} from "../../Onboard/onboard";
 const ethereum = window?.ethereum;
 const Navbar = () => {
 
-    const isConnected = ethereum?.isConnected()
+    // const isConnected = false
+    // console.log(isConnected)
 
     let [buttonText, setButtonText] = useState("Connect");
     const connectMetamask = async () => {
@@ -38,6 +40,18 @@ const Navbar = () => {
             // alert("An error has occurred. Please make sure the metamask is ready to go. See error in log");
         });
     }
+    const connectWallet = async () => {
+        try {
+            const walletSelectData = await onboard.walletSelect();
+            console.log(`walletSelect: ${walletSelectData}`)
+            const walletCheckData = await onboard.walletCheck();
+            console.log(`walletCheck: ${walletCheckData}`)
+            setButtonText("My Bearz");
+        } catch (e) {
+            console.log(e)
+        }
+
+    };
 
 
 
@@ -73,15 +87,15 @@ const Navbar = () => {
                                                         tabIndex="0">Discord</a></li>
                                 <li className="last leaf"><a href="https://www.instagram.com/cyberbearzz/" title="" className="nolink"
                                                              tabIndex="0">Instagram</a></li>
-                            </ul>
-                            <div className="navbar-text navbar-right">
-                                <div className="navbar-collapse collapse" id="navbar-collapse">
-                                {buttonText === "My Bearz" || isConnected ?
-                                    <NavLink id="my-squad" className="btn btn-sm btn-default" to="/squade">My Squad</NavLink>
-                                    : <button onClick={() => connectMetamask()} className="btn btn-sm btn-default">{buttonText}</button>
-                                }
+                                <div className="navbar-text navbar-right">
+                                    <div className="navbar-collapse collapse" id="navbar-collapse">
+                                        {buttonText === "My Bearz" ?
+                                            <NavLink id="my-squad" className="btn btn-sm btn-default" to="/squade">My Squad</NavLink>
+                                            : <button onClick={() => connectWallet()} className="btn btn-sm btn-default">{buttonText}</button>
+                                        }
+                                    </div>
                                 </div>
-                            </div>
+                            </ul>
                         </nav>
                 </div>
             </header>

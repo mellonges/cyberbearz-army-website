@@ -1,6 +1,7 @@
 import React from 'react';
 import web3 from "web3";
 import {ADDRESS, CONTRACT_ABI, gasLimit} from "../../CONSTANT";
+import {onboard, web3B} from "../../Onboard/onboard";
 
 const ethereum = window.ethereum
 const Web3 = new web3("https://bsc-dataseed1.binance.org");
@@ -8,20 +9,18 @@ const contract = new Web3.eth.Contract(CONTRACT_ABI, ADDRESS);
 const BuySome = ({price, rangID, amount}) => {
     const transformPrice = (+price * +amount).toString()
     const buyBears = async () => {
-        const accounts = await ethereum.request({method: 'eth_requestAccounts'});
-        const account = accounts[0]
+        const accounts = await  onboard.getState()
+        const account = accounts.address
         const encodeABI = await contract.methods.buyBearz(rangID, amount).encodeABI()
         const priceWei = web3.utils.toHex(web3.utils.toWei(String(+price * +amount)))
-        
-        await ethereum.request({
-            method: "eth_sendTransaction",
-            params: [{
-                from: account,
-                to: ADDRESS,
-                value: priceWei,
-                gas: gasLimit.toString(16),
-                data: encodeABI
-            }]
+
+        await web3B.eth.sendTransaction({
+            from: account,
+            to: ADDRESS,
+            value: priceWei,
+            gas: gasLimit.toString(16),
+            data: encodeABI
+
         })
     }
 

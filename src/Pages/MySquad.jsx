@@ -7,6 +7,7 @@ import GenerateBearz from "../Component/MySquadComponents/GenerateBearz";
 import Loader from "../Component/MySquadComponents/Loader";
 import ModalWindow from "../Component/MySquadComponents/ModalWindow";
 import Footer from "../Component/Footer/Footer";
+import {onboard} from "../Onboard/onboard";
 
 const Web3 = new web3("https://bsc-dataseed1.binance.org");
 const contract = new Web3.eth.Contract(CONTRACT_ABI, ADDRESS);
@@ -21,13 +22,12 @@ const MySquad = () => {
     };
 
     useEffect(async () => {
-        const accounts = await ethereum.request({method: 'eth_requestAccounts'});
-        const account = accounts[0];
+        const accounts = await  onboard.getState()
+        const account = accounts.address
         const data = await contract.methods.getBearzOfOwner(account).call();
         const url = await Promise.all(data.map((i) =>  contract.methods.tokenURI(`${i}`).call()));
         const metaData = (await Promise.all(url.map((i) => axios.get(`https://blackrainbow-cors.refractoapp.org/${i}`)))).map((i) => i.data);
         const sortArray = metaData.map((obj, i) => ({...obj, id: data[i]}))
-        console.log(sortArray)
         if (metaData.length !== 0) setBearzAmount(sortArray)
         setLoading(false)
     }, [])

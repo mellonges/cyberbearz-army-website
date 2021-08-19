@@ -8,15 +8,15 @@ import Outfit from "./Pages/ Outfit";
 
 function App() {
     return (
-        <React.Suspense fallback={<LinearProgress  color="secondary" />}>
-        <BrowserRouter>
-            <div className="App">
-                <Navbar/>
-                <Route exact path="/" component={MainPage}/>
-                <Route exact path="/squade" component={MySquad}/>
-                <Route exact path="/outfit" component={Outfit} />
-            </div>
-        </BrowserRouter>
+        <React.Suspense fallback={<LinearProgress color="secondary"/>}>
+            <BrowserRouter>
+                <div className="App">
+                    <Navbar/>
+                    <Route exact path="/" component={MainPage}/>
+                    <Route exact path="/squade" component={MySquad}/>
+                    <Route exact path="/outfit" component={Outfit}/>
+                </div>
+            </BrowserRouter>
         </React.Suspense>
 
 
