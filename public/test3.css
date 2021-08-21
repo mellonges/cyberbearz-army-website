@@ -3131,8 +3131,8 @@ input[type="button"].btn-block {
 .fade.in {
     opacity: 1; }
 
-.collapse {
-    display: none; }
+/*.collapse {*/
+/*    display: none; }*/
 .collapse.in {
     display: block; }
 
@@ -6913,8 +6913,9 @@ div > img.h-i {
     .navbar-header {
         height: 55px;
         text-align: center; }
-    .navbar-collapse {
-        display: none !important; } }
+    /*.navbar-collapse {*/
+    /*    display: none !important; }*/
+}
 
 .nav-inside {
     border-top: 1px solid #444;

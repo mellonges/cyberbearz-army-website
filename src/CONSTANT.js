@@ -1,6 +1,7 @@
  export const gasLimit = 300000;
  export const API_KEY = "88860fea-1314-455a-9857-39e3b477def1";
  export const ADDRESS = "0x3B1983031b67B0eee8600F252d57A6679ea79fC7";
+ export const RPC_URL = "https://bsc-dataseed1.binance.org";
 
  export const CONTRACT_ABI = [
      {

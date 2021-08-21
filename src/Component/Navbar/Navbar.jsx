@@ -44,9 +44,9 @@ const Navbar = () => {
         try {
             const walletSelectData = await onboard.walletSelect();
             console.log(`walletSelect: ${walletSelectData}`)
-            const walletCheckData = await onboard.walletCheck();
+            const walletCheckData = await onboard.walletCheck()
+            if (walletCheckData) setButtonText("My Bearz");
             console.log(`walletCheck: ${walletCheckData}`)
-            setButtonText("My Bearz");
         } catch (e) {
             console.log(e)
         }
@@ -85,8 +85,8 @@ const Navbar = () => {
                                                         tabIndex="0">Twitter</a></li>
                                 <li className="leaf"><a href="https://discord.gg/hxbtGfUy" title="" className="nolink"
                                                         tabIndex="0">Discord</a></li>
-                                <li className="last leaf"><a href="https://www.instagram.com/cyberbearzz/" title="" className="nolink"
-                                                             tabIndex="0">Instagram</a></li>
+                                <li className="last leaf"><a href="https://t.me/cyberbearzz" title="" className="nolink"
+                                                             tabIndex="0">Telegram</a></li>
                                 <div className="navbar-text navbar-right">
                                     <div className="navbar-collapse collapse" id="navbar-collapse">
                                         {buttonText === "My Bearz" ?

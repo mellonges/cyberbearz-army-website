@@ -1,6 +1,6 @@
 import Onboard from 'bnc-onboard'
 import Web3 from 'web3'
-import {API_KEY} from "../CONSTANT";
+import {API_KEY, RPC_URL} from "../CONSTANT";
 
 export let web3B
 export const onboard = Onboard({
@@ -15,11 +15,13 @@ export const onboard = Onboard({
             console.log(wallet.name);
         }
     },
-            walletSelect: {
-                wallets: [
-                    {walletName: "trust", rpcUrl: "https://bsc-dataseed1.binance.org"},
-                    {walletName: "metamask"},
-                    {walletName: "binance"},
-                ]
-            }
+    walletSelect: {
+        wallets: [
+            {walletName: "metamask", preferred: true},
+            {walletName: "trust", rpcUrl: RPC_URL, preferred: true},
+            {walletName: "binance", preferred: true},
+            {walletName: "walletConnect", rpc: {["56"]: RPC_URL}},
+            {walletName: 'coinbase', preferred: true}
+        ]
+    }
 });

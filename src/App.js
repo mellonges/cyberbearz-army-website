@@ -1,11 +1,10 @@
 import React from "react";
-import {BrowserRouter, Route} from "react-router-dom";
+import {BrowserRouter, Link, Route} from "react-router-dom";
 import MainPage from "./Pages/mainPage";
 import MySquad from "./Pages/MySquad";
 import Navbar from "./Component/Navbar/Navbar";
 import {LinearProgress} from "@material-ui/core";
 import Outfit from "./Pages/ Outfit";
-
 function App() {
     return (
         <React.Suspense fallback={<LinearProgress color="secondary"/>}>
