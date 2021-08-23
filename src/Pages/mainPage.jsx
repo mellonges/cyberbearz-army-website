@@ -3,7 +3,7 @@ import BearsTable from "../Component/Bears Table /BearsTable";
 import Section from "../Component/Bears/Section";
 import JqueryAccordion from "../Component/jqueryAccordion/JqueryAccordion";
 import ParallaxEffect from "../Component/Parallax/ParallaxEffect";
-import Complete from "../Component/60%Complete/Comlete";
+import Complete from "../Component/60Complete/Comlete";
 import Meanwhile from "../Component/Meanwhile/Meanwhile";
 import Community from "../Component/Community/Community";
 import FooterWithComments from "../Component/Footer/FooterWithComments";

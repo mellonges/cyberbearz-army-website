@@ -88,12 +88,12 @@ const Navbar = () => {
                                 <li className="last leaf"><a href="https://t.me/cyberbearzz" title="" className="nolink"
                                                              tabIndex="0">Telegram</a></li>
                                 <div className="navbar-text navbar-right">
-                                    <div className="navbar-collapse collapse" id="navbar-collapse">
+                                    {/*<div className="navbar-collapse collapse" id="navbar-collapse">*/}
                                         {buttonText === "My Bearz" ?
                                             <NavLink id="my-squad" className="btn btn-sm btn-default" to="/squade">My Squad</NavLink>
                                             : <button onClick={() => connectWallet()} className="btn btn-sm btn-default">{buttonText}</button>
                                         }
-                                    </div>
+                                    {/*</div>*/}
                                 </div>
                             </ul>
                         </nav>
