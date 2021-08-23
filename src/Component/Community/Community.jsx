@@ -12,7 +12,7 @@ const Community = () => {
                             <div className="section-content">
                                 <div className="section-content-caption"><p className="section-eyebrow">Communicate with
                                     us</p><h3 className="h2">Join the community!</h3>
-                                    <p>Subscribe on our Twitter, Discord, and Instagram. The more community members, the
+                                    <p>Subscribe on our Twitter, Discord, and Telegram. The more community members, the
                                         more profitable your purchase is. DM us, if you have any questions!</p></div>
                             </div>
                         </div>
@@ -43,12 +43,13 @@ const Community = () => {
                                     </div>
                                 </div>
                                 <div className="strip strip-sm">
-                                    <figure className="strip-icon icon icon-ios icon-ios-instagram"></figure>
-                                    <div className="strip-caption"><h4 className="h5">Instagram</h4>
-                                        <p className="strong">Subscribe to Instagram</p>
-                                        <p className="small">Visit our <a href="https://www.instagram.com/cyberbearzz/"
-                                                                          target="_blank">@cyberbearzz</a> account for
-                                            ideas, inspiration, and info about the development of the project.</p></div>
+                                    <figure className="strip-icon icon icon-ios icon-ios-telegram"></figure>
+                                    <div className="strip-caption"><h4 className="h5">Telegram</h4>
+                                        <p className="strong">Join the chat on Telegram</p>
+                                        <p className="small">Join our chat<a href="https://t.me/cyberbearzz"
+                                                                             target="_blank">@cyberbearzz</a> for your
+                                            questions, trading and information about the development of the project.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

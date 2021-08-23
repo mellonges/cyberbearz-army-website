@@ -10938,6 +10938,7 @@ html.js .autocomplete-throbber.throbbing {
 }
 
 .section-theme-indent-bottom-inside-md .section-content {
+    padding-top: 0px;
     padding-bottom: 66px;
 }
 

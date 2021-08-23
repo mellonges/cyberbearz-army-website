@@ -10832,10 +10832,38 @@ html.js .autocomplete-throbber.throbbing {
 
 }
 
-.icon-ios-instagram {
-    background-image: url(images/instagram-icon-112.png) !important;
+.icon-ios-telegram {
+    background-image: url(images/telegram-icon-112.png) !important;
 }
 
+.icon-lootex {
+    background-image: url(images/air_glyph_056_lootex.svg);
+    width: 198px;
+    height: 48px;
+    background-size: 100%;
+}
+
+.icon-nftkey {
+    background-image: url(images/air_glyph_057_nftkey.svg);
+    width: 198px;
+    height: 48px;
+    background-size: 100%;
+}
+
+.icon-scv {
+    background-image: url(images/air_glyph_058_scv.svg);
+    width: 55px;
+    height: 48px;
+    background-size: 100%;
+}
+
+.icon-ios-sniper {
+    background-image: url(images/sniper-icon-112.png);
+}
+
+.icon-ios-docs {
+    background-image: url(images/docs-icon-112.png);
+}
 
 .barry-body-armor {
     background-image: url(images/cyberbearz-tile-barry.png);

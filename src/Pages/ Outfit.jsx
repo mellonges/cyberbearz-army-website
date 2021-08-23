@@ -25,7 +25,7 @@ const Outfit = () => {
                         <div
                             className="section-content-wrapper col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
                             <div className="section-content">
-                                <div className="section-content-caption"><p className="section-eyebrow">Bear Outfit</p>
+                                <div className="section-content-caption"><p className="section-eyebrow">Outfit & Rarity </p>
                                     <h1>Scarcity &amp; Properties.</h1>
                                     <p>The NFT CyberBearz Army consists of 7 layers. 5 layers are for all bears, they
                                         have different rarity levels. And 2 layers are ranked and depend on the military
@@ -66,6 +66,56 @@ const Outfit = () => {
                         </div>
                     </div>
                 </div>
+            </section>
+            <section
+                className="section section-lg section-align-center section-theme-autoheight section-theme-transparent section-eyebrow-include section-theme-indent-bottom-inside-md section-theme-indent-no-bottom-outside  section-44 section-i1">
+                <div className="container">
+                    <div className="row">
+                        <div
+                            className="section-content-wrapper col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                            <div className="section-content">
+                                <div className="section-content-caption"><p className="section-eyebrow">Rarity</p>
+                                    <h3>How do you know the rarity?</h3>
+                                    <p>We made friends with the service for checking the uniqueness of NFT cards. To
+                                        check the bear for uniqueness, you need to go to the Discord Rarity Sniper
+                                        server and enter the check command into the chat. We also prepared a simple
+                                        table that shows the dropout percentage of all layers.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="section-option container">
+                    <div className="strip-wrapper row">
+                        <div
+                            className="col-lg-12 col-lg-offset-0 col-md-8 col-md-offset-2  col-sm-10 col-sm-offset-1 col-xs-12">
+                            <div className="strip-items">
+                                <div className="strip strip-md">
+                                    <figure className="strip-icon icon icon-ios icon-ios-sniper"></figure>
+                                    <div className="strip-caption"><h4 className="h5">Rarity Sniper</h4>
+                                        <p className="strong">Join Discord</p>
+                                        <p className="small">To check the rarity, you need to enter the command <b>!rarity
+                                            cyberbearzarmy id 0</b> in the special chat. Where <b>0</b> is the token
+                                            number, you can see it in the bear card.</p>
+                                        <p className="small"><a href="https://discord.gg/raritysniper" className="link"
+                                                                target="_blank">Сheck rarity</a></p></div>
+                                </div>
+                                <div className="strip strip-md">
+                                    <figure className="strip-icon icon icon-ios icon-ios-docs"></figure>
+                                    <div className="strip-caption"><h4 className="h5">Rarity table</h4>
+                                        <p className="strong">See Google Doc</p>
+                                        <p className="small">In this table, you can see the number of layers and their
+                                            percentage relative to the number of all cards. It is difficult to navigate
+                                            in the table, but sometimes it can help.</p>
+                                        <p className="small"><a
+                                            href="https://docs.google.com/spreadsheets/d/1L68r1Ze_NiRQrEbjxHO324fLqQn_2QmEUBv9y_gaiNQ/edit#gid=1641284940"
+                                            className="link" target="_blank">Look at the rarity</a></p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </section>
             <section
                 className="section section-lg section-align-center section-theme-autoheight section-theme-transparent section-eyebrow-include section-theme-indent-bottom-inside-md section-theme-indent-no-bottom-outside  section-38 section-i1">

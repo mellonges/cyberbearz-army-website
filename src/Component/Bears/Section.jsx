@@ -5,6 +5,7 @@ import Bearz3 from "./Bearz3";
 import Bearz4 from "./Bearz4";
 import Bearz5 from "./Bearz5";
 import Bearz6 from "./Bearz6";
+import {NavLink} from "react-router-dom";
 
 
 const Section = () => {
@@ -21,7 +22,9 @@ const Section = () => {
                                 change</p><h2>Recruit your bear army.</h2>
                                 <p>4,096 cool bear soldiers serve in CyberBearz Army: recruits, privates, officers,
                                     elites, and generals. All ranks are limited and have their own privileges for
-                                    getting ammunition. We give away 512 recruits for free!</p></div>
+                                    getting ammunition. We give away 512 recruits for free!<sup>1</sup></p>
+                                <p><NavLink class="link" to="/outfit">See bear outfit & rarity</NavLink></p>
+                            </div>
                         </div>
                     </div>
                 </div>

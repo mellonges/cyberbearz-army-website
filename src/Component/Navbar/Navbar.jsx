@@ -79,7 +79,7 @@ const Navbar = () => {
                              className="navbar-nav-wrapper">
                             <ul className="menu nav navbar-nav">
 
-                                <li id="firstLeaf" className="first leaf"><NavLink  to="/outfit">Bear Outfit</NavLink>
+                                <li id="firstLeaf" className="first leaf"><NavLink  to="/outfit">Outfit & Rarity</NavLink>
                                 </li>
                                 <li className="leaf"><a href="https://twitter.com/cyberbearz" title="" className="nolink"
                                                         tabIndex="0">Twitter</a></li>
